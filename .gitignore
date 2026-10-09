@@ -1,0 +1,30 @@
+# Docker Compose Override para desarrollo local
+docker-compose.override.yml
+
+# Variables de entorno locales
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+build/
+target/
+
+# Internal repos (submódulos o repos separados)
+pos-backend/
+pos-frontend/

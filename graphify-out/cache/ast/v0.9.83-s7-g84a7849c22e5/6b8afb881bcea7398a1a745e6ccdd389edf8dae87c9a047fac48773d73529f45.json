@@ -1,0 +1,1 @@
+{"nodes": [{"id": "$graphify-root$_pos_backend_src_main_resources_db_migration_v12_insert_test_users_sql", "label": "V12__insert_test_users.sql", "file_type": "code", "source_file": "pos-backend/src/main/resources/db/migration/V12__insert_test_users.sql", "source_location": null}], "edges": []}
