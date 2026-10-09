@@ -103,7 +103,7 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 *Reportes, mejoras de UX y calidad*
 
 - [ ] **Reportes Gerenciales y Margen de Utilidad** (#19): Dashboard financiero con cálculo de ventas netas, costo de mercancía vendida (COGS) y margen de utilidad bruta (`(Precio Venta - Costo Unitario)`), además del ranking de prendas más vendidas por categoría y talla.
-- [ ] **Expandir Detalle de Venta en Historial** (#27): En `SalesHistory.tsx`, cada fila de la tabla debe ser expandible (click en fila o icono chevron) para mostrar el detalle de productos de esa venta: lista de items con SKU, nombre, talla, color, cantidad, precio unitario, subtotal. Cargar bajo demanda (lazy) vía `GET /api/sales/{id}/items` o incluir en respuesta de `/api/sales` con flag `?includeItems=true`.
+- [x] **Expandir Detalle de Venta en Historial** (#27): En `SalesHistory.tsx`, cada fila de la tabla debe ser expandible (click en fila o icono chevron) para mostrar el detalle de productos de esa venta: lista de items con SKU, nombre, talla, color, cantidad, precio unitario, subtotal. Cargar bajo demanda (lazy) vía `GET /api/sales/{id}/items` o incluir en respuesta de `/api/sales` con flag `?includeItems=true`.
 - [ ] **Tests Unitarios y de Integración: Concurrencia NC** (#70): Pruebas de concurrencia en la redención de saldos, validación de estados de la NC, reingreso a inventario y comprobación de que la caja no sufra egresos monetarios.
 
 ---
