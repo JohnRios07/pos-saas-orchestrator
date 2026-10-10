@@ -117,7 +117,7 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
   - `CustomerSelector` — Final / Registrado / Nuevo (inline form)
   - `PaymentModal` — multi-pago (Efectivo/Transfer/NC) con auto-balance
   - `CreditNoteSection` — validación y redención integrada al cálculo de pago
-- [ ] **Skeletons de carga** — Todas las tablas (Kardex, Inventario, Historial, Productos) con `Skeleton` component
+- [x] **Skeletons de carga** — Todas las tablas (Kardex, Inventario, Historial, Productos) con `Skeleton` component
 - [ ] **Atajos de teclado POS** — F1-F12, Enter, Escape, números rápidos para cajeros
 - [ ] **Sistema unificado de errores** — Field-level (inline), Toast (global), Banner (page-level) con códigos backend
 
