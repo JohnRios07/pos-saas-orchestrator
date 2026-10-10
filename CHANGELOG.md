@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-10-09
+
+### Added
+- **Design System (Frontend)**: Implemented atomic design primitives (`Button`, `Input`, `Card`, `Badge`, `Skeleton`) and applied new Tailwind v4 theme tokens.
+- **Cart State Management (Frontend)**: Migrated cart state to a global, persistent Zustand store, resolving severe prop-drilling in the POS.
+- **Keyboard Shortcuts (Frontend)**: Added global shortcuts for fast operations: `Cmd+K` (Search), `F2` (Charge), `ESC` (Close Modals).
+
+### Changed
+- **POS Refactor (Frontend)**: Decomposed the monolithic 800-line `Sales.tsx` into cohesive bounded context components (`ProductSelector`, `CartPanel`, `PaymentModal`, `CustomerSelector`).
+- **Store ID UX (Frontend)**: Removed the manual Store ID text input from `Inventory.tsx` in favor of reading directly from the auth token context.
+
 
 ## [1.2.0] - 2026-10-09
 

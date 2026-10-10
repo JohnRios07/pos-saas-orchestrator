@@ -82,23 +82,7 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 ---
 
-## 📋 SPRINT 3 - Próximo Sprint (v1.3.0) | **Planificación**
-
-*Definir en próxima sesión de planning*
-
-- [ ] *[Pendiente definición - añadir items aquí]*
-
----
-
-## 📋 SPRINT 4 (v1.4.0) | **Icebox**
-
-*Candidatos para futuros sprints*
-
-- [ ] *[Pendiente definición]*
-
----
-
-## 📊 SPRINT 7 - Business Intelligence & UX (v1.7.0) | **~2-3 semanas (P2)**
+## 📊 SPRINT 3 - Business Intelligence & UX (v1.3.0) | **~2-3 semanas (P2)**
 
 *Reportes, mejoras de UX y calidad*
 
@@ -108,11 +92,39 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 ---
 
-## 🔔 SPRINT 8 - Engagement & Comms (v1.8.0) | **~2-3 semanas (P3)**
+## 🔔 SPRINT 4 - Engagement & Comms (v1.4.0) | **~2-3 semanas (P3)**
 
 *Notificaciones y comunicaciones*
 
 - [ ] **Notificaciones a Clientes** (#24): Implementar envío automático de comprobantes (Recibos PDF) y alertas mediante Email y/o WhatsApp.
+
+---
+
+## 🎨 SPRINT 5 - Design System & UX Refactor (v1.5.0) | **~3-4 semanas (P1)**
+
+*Fundación visual y refactor del flujo crítico POS — base para escalar UI consistente*
+
+### Design System Foundation
+- [ ] **Design Tokens en Tailwind** — Configurar `tailwind.config.js` con paleta semántica (primary/success/warning/danger/neutral), escala spacing 4px, tipografía (headings/body/label), border-radius, sombras
+- [ ] **Biblioteca de primitivas UI** — Extraer y estandarizar: `Button`, `Input`, `Select`, `Modal`, `Table`, `Badge`, `Card`, `Toast`, `Spinner`, `Skeleton`, `EmptyState` en `src/components/ui/`
+- [ ] **Form Library Adoption** — Integrar React Hook Form + Zod; migrar `Sales.tsx` y `CashManagement.tsx` como pilotos
+- [ ] **Hooks de formato centralizados** — `useCurrency()`, `useNumberFormat()`, `useDateFormat()` eliminando 5+ duplicaciones de `Intl.NumberFormat`
+
+### POS Refactor (Flujo Crítico)
+- [ ] **Descomponer `Sales.tsx` (793 líneas)** en componentes enfocados:
+  - `ProductSelector` — búsqueda/selección producto + variantes
+  - `CartPanel` — carrito, descuentos globales, subtotales
+  - `CustomerSelector` — Final / Registrado / Nuevo (inline form)
+  - `PaymentModal` — multi-pago (Efectivo/Transfer/NC) con auto-balance
+  - `CreditNoteSection` — validación y redención integrada al cálculo de pago
+- [ ] **Skeletons de carga** — Todas las tablas (Kardex, Inventario, Historial, Productos) con `Skeleton` component
+- [ ] **Atajos de teclado POS** — F1-F12, Enter, Escape, números rápidos para cajeros
+- [ ] **Sistema unificado de errores** — Field-level (inline), Toast (global), Banner (page-level) con códigos backend
+
+### Accesibilidad & Polish
+- [ ] **Auditoría ARIA** — Modals (`aria-modal`, `aria-labelledby`), selects, focus management, keyboard nav
+- [ ] **Store ID como dropdown** — `Inventory.tsx` usar store del contexto auth en lugar de input libre
+- [ ] **i18n structure** — Extraer strings hardcodeados a `src/i18n/` (preparar ES/EN)
 
 ---
 
