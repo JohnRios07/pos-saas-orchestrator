@@ -3,7 +3,7 @@
   "1": "Scenarios",
   "2": "Tasks: Sprint 1 - Cash Session Resilience & Validation",
   "3": "Backlog: V2 - Camino a Producción",
-  "4": "ref_fs",
+  "4": "39. Apéndice - Ejemplo de estructura de repositorio",
   "5": "Proposal: Sprint 1 - Cash Session Resilience & Validation",
   "6": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
   "7": "1.2 Principios de producto",
@@ -50,8 +50,5 @@
   "48": "4. Contexto y arquitectura C4",
   "49": "opencode.json",
   "50": "Software Architecture Handbook 1.0",
-  "87": "fix_service.py",
-  "98": "sys",
-  "99": "backup.sh",
-  "134": "test_backend.js"
+  "99": "backup.sh"
 }

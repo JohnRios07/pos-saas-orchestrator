@@ -1,17 +1,17 @@
 # Graph Report - pos  (2026-10-14)
 
 ## Corpus Check
-- 32 files · ~23,306 words
+- 14 files · ~20,799 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 5 file(s) not represented in the graph (top: (none) 2, .example 1, .gz 1)
+- Unclassified: 4 file(s) not represented in the graph (top: (none) 2, .example 1, .gz 1)
 
 ## Summary
-- 485 nodes · 469 edges · 55 communities (50 shown, 5 thin omitted)
+- 435 nodes · 423 edges · 52 communities (49 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4d51391e`
+- Built from commit: `445d1b06`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,7 +20,7 @@
 - Scenarios
 - Tasks: Sprint 1 - Cash Session Resilience & Validation
 - Backlog: V2 - Camino a Producción
-- ref_fs
+- 39. Apéndice - Ejemplo de estructura de repositorio
 - Proposal: Sprint 1 - Cash Session Resilience & Validation
 - POS_SaaS_Software_Architecture_Handbook_1.0.md
 - 1.2 Principios de producto
@@ -87,7 +87,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (55 total, 5 thin omitted)
+## Communities (52 total, 3 thin omitted)
 
 ### Community 0 - "Design: Sprint 1 - Cash Session Resilience & Validation"
 Cohesion: 0.09
@@ -105,17 +105,13 @@ Nodes (17): Change ID, Definition of Done, Parallel Execution, Phase 1: Foundati
 Cohesion: 0.10
 Nodes (20): Accesibilidad & Polish, Backlog: V2 - Camino a Producción, Design System Foundation, Deuda Técnica (Testing & QA), Funcionalidad de Negocio, ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**, 🛍️ MÓDULO PLAN SEPARE / LAYAWAY (v1.4.0) | **Completado**, Notas de Crédito y Mejoras UX (+12 more)
 
-### Community 4 - "ref_fs"
-Cohesion: 0.05
-Nodes (27): code, fs, code, fs, code, fs, code, fs (+19 more)
-
 ### Community 5 - "Proposal: Sprint 1 - Cash Session Resilience & Validation"
 Cohesion: 0.12
 Nodes (15): 1. Reusable Hook: `useCashSession()`, 2. Component-Level Changes, Acceptance Criteria, Approach, Change ID, Current State Analysis, Dependencies, Intent (+7 more)
 
 ### Community 6 - "POS_SaaS_Software_Architecture_Handbook_1.0.md"
-Cohesion: 0.13
-Nodes (14): 32. Migración futura a microservicios, 34. Definition of Done, 35. Checklist de seguridad antes de producción, 37. Riesgos técnicos, 38. Reglas de oro del proyecto, 39. Apéndice - Ejemplo de estructura de repositorio, 40. ADR template, 42. Contrato inicial de eventos (+6 more)
+Cohesion: 0.15
+Nodes (12): 32. Migración futura a microservicios, 34. Definition of Done, 35. Checklist de seguridad antes de producción, 37. Riesgos técnicos, 38. Reglas de oro del proyecto, 40. ADR template, 42. Contrato inicial de eventos, 44. Evolución del esquema de datos (+4 more)
 
 ### Community 7 - "1.2 Principios de producto"
 Cohesion: 0.14
@@ -290,21 +286,21 @@ Cohesion: 0.67
 Nodes (3): Control del documento, Cómo usar este documento, Software Architecture Handbook 1.0
 
 ## Knowledge Gaps
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `1. Visión del producto` connect `1.2 Principios de producto` to `POS_SaaS_Software_Architecture_Handbook_1.0.md`?**
-  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **Should `Design: Sprint 1 - Cash Session Resilience & Validation` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Why does `7. Modelo de datos PostgreSQL` connect `7. Modelo de datos PostgreSQL` to `POS_SaaS_Software_Architecture_Handbook_1.0.md`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Should `Scenarios` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Why does `5. Arquitectura de dominios` connect `5.3 Agregados principales` to `POS_SaaS_Software_Architecture_Handbook_1.0.md`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Should `Tasks: Sprint 1 - Cash Session Resilience & Validation` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Backlog: V2 - Camino a Producción` be split into smaller, more focused modules?**
