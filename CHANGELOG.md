@@ -12,12 +12,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Backend**:
     - Added Flyway migration `V23__create_settings_tables.sql` with isolated typed tables (`tenant_sales_settings`, `tenant_inventory_settings`, `tenant_cash_settings`) and default tenant seeding.
     - Implemented domain entities, repositories, DTOs, and REST endpoints for `BusinessSettingsController`, `SalesSettingsController`, `InventorySettingsController`, and `CashSettingsController`.
-    - Enforced backend domain rules: cashier discount threshold validation in `SaleService`, configurable negative stock prevention in `InventoryService`, and blind cash count balance masking in `CashController` via `CashSessionResponseDto`.
-    - Added comprehensive integration tests in `SettingsControllersIntegrationTest`.
+    - Enforced backend domain rules: cashier discount threshold validation, customer requirement enforcement (`allowSalesWithoutCustomer`), return policy and expiration window checks (`allowReturns`, `returnWindowDays`) in `SaleService`, configurable negative stock prevention in `InventoryService`, and blind cash count balance masking in `CashController` via `CashSessionResponseDto`.
+    - Added comprehensive integration tests in `SettingsControllersIntegrationTest` and `SaleServiceUnitTest`.
   - **Frontend**:
     - Created Settings Hub (`/settings`) displaying the 10 business and operational categories with priority badges, status indicators, and direct navigation.
     - Implemented modular forms with unified tab navigation (`SettingsNav`): `BusinessSettingsForm` (`/settings/business`), `SalesSettingsForm` (`/settings/sales`), `CashSettingsForm` (`/settings/cash`), and `InventorySettingsForm` (`/settings/inventory`), connecting seamlessly with thermal receipt settings (`/settings/receipt`).
-    - Added unit test coverage in `SettingsHub.test.tsx`.
+    - Reactively bound tenant sales settings across the POS:
+      - Enforced cashier discount limit (`maxCashierDiscountRate`) in `ItemDiscountModal` with visual warnings and submit blocking.
+      - Enforced customer requirement (`allowSalesWithoutCustomer`) in `Sales.tsx` and `PaymentModal.tsx` with blocking warnings.
+      - Enforced return policy and return window expiration (`allowReturns`, `returnWindowDays`) in `SalesHistory.tsx` and `SaleRow.tsx`.
+    - Added unit test coverage in `SettingsHub.test.tsx`, `PaymentModal.test.tsx`, and `ItemDiscountModal.test.tsx`.
 - **Purchasing Bounded Context Redesign**:
   - **Backend**: Separated purchase order planning (`Purchase`) from stock receipt (`GoodsReceipt`) following DDD baseline. Added sequence generator (`tenant_purchase_sequences`) for consecutive `OC-XXXX` numbering and Flyway migration `V22__redesign_purchasing_orders_and_receipts.sql`.
   - **Partial Goods Receipts**: Introduced physical receipt processing with difference tracking, status transition (`PENDING` -> `PARTIALLY_RECEIVED` -> `RECEIVED`), and event-driven inventory updates.

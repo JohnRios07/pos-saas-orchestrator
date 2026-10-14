@@ -1564,7 +1564,7 @@
       "node_kind": "heading",
       "norm_label": "[1.1.0] - 2026-10-07",
       "source_file": "CHANGELOG.md",
-      "source_location": "L14"
+      "source_location": "L25"
     },
     {
       "id": "changelog_1_2_0_2026_10_09",
@@ -1576,7 +1576,19 @@
       "node_kind": "heading",
       "norm_label": "[1.2.0] - 2026-10-09",
       "source_file": "CHANGELOG.md",
-      "source_location": "L9"
+      "source_location": "L20"
+    },
+    {
+      "id": "changelog_1_3_0_2026_10_09",
+      "label": "[1.3.0] - 2026-10-09",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "[1.1.0] - 2026-10-07",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[1.3.0] - 2026-10-09",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L8"
     },
     {
       "id": "changelog_added",
@@ -1588,10 +1600,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L11"
+      "source_location": "L10"
     },
     {
-      "id": "changelog_added_16",
+      "id": "changelog_added_22",
       "label": "Added",
       "_origin": "ast",
       "community": 13,
@@ -1600,7 +1612,19 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L16"
+      "source_location": "L22"
+    },
+    {
+      "id": "changelog_added_27",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "[1.1.0] - 2026-10-07",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L27"
     },
     {
       "id": "changelog_changed",
@@ -1612,7 +1636,19 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L31"
+      "source_location": "L15"
+    },
+    {
+      "id": "changelog_changed_42",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "[1.1.0] - 2026-10-07",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L42"
     },
     {
       "id": "changelog_changelog",
@@ -1636,7 +1672,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24"
+      "source_location": "L35"
     },
     {
       "id": "changelog_security",
@@ -1648,7 +1684,7 @@
       "node_kind": "heading",
       "norm_label": "security",
       "source_file": "CHANGELOG.md",
-      "source_location": "L27"
+      "source_location": "L38"
     },
     {
       "id": "test_backend",
@@ -3474,6 +3510,18 @@
       "source_location": "L1"
     },
     {
+      "id": "backlog_accesibilidad_polish",
+      "label": "Accesibilidad & Polish",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "accesibilidad & polish",
+      "source_file": "BACKLOG.md",
+      "source_location": "L124"
+    },
+    {
       "id": "backlog_backlog_v2_camino_a_producci\u00f3n",
       "label": "Backlog: V2 - Camino a Producci\u00f3n",
       "_origin": "ast",
@@ -3484,6 +3532,18 @@
       "norm_label": "backlog: v2 - camino a produccion",
       "source_file": "BACKLOG.md",
       "source_location": "L1"
+    },
+    {
+      "id": "backlog_design_system_foundation",
+      "label": "Design System Foundation",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "design system foundation",
+      "source_file": "BACKLOG.md",
+      "source_location": "L107"
     },
     {
       "id": "backlog_deuda_t\u00e9cnica_testing_qa",
@@ -3543,7 +3603,19 @@
       "node_kind": "heading",
       "norm_label": "\u2696\ufe0f paralelo - facturacion electronica (legal/blocker) | **lead time: semanas**",
       "source_file": "BACKLOG.md",
-      "source_location": "L119"
+      "source_location": "L131"
+    },
+    {
+      "id": "backlog_pos_refactor_flujo_cr\u00edtico",
+      "label": "POS Refactor (Flujo Cr\u00edtico)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "pos refactor (flujo critico)",
+      "source_file": "BACKLOG.md",
+      "source_location": "L113"
     },
     {
       "id": "backlog_resumen_t\u00e9cnico_y_arquitectura_entregada_sprint_1",
@@ -3606,52 +3678,40 @@
       "source_location": "L72"
     },
     {
-      "id": "backlog_sprint_3_pr\u00f3ximo_sprint_v1_3_0_planificaci\u00f3n",
-      "label": "\ud83d\udccb SPRINT 3 - Pr\u00f3ximo Sprint (v1.3.0) | **Planificaci\u00f3n**",
+      "id": "backlog_sprint_3_business_intelligence_ux_v1_3_0_2_3_semanas_p2",
+      "label": "\ud83d\udcca SPRINT 3 - Business Intelligence & UX (v1.3.0) | **~2-3 semanas (P2)**",
       "_origin": "ast",
       "community": 3,
       "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "\ud83d\udccb sprint 3 - proximo sprint (v1.3.0) | **planificacion**",
+      "norm_label": "\ud83d\udcca sprint 3 - business intelligence & ux (v1.3.0) | **~2-3 semanas (p2)**",
       "source_file": "BACKLOG.md",
       "source_location": "L85"
     },
     {
-      "id": "backlog_sprint_4_v1_4_0_icebox",
-      "label": "\ud83d\udccb SPRINT 4 (v1.4.0) | **Icebox**",
+      "id": "backlog_sprint_4_engagement_comms_v1_4_0_2_3_semanas_p3",
+      "label": "\ud83d\udd14 SPRINT 4 - Engagement & Comms (v1.4.0) | **~2-3 semanas (P3)**",
       "_origin": "ast",
       "community": 3,
       "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "\ud83d\udccb sprint 4 (v1.4.0) | **icebox**",
+      "norm_label": "\ud83d\udd14 sprint 4 - engagement & comms (v1.4.0) | **~2-3 semanas (p3)**",
       "source_file": "BACKLOG.md",
-      "source_location": "L93"
+      "source_location": "L95"
     },
     {
-      "id": "backlog_sprint_7_business_intelligence_ux_v1_7_0_2_3_semanas_p2",
-      "label": "\ud83d\udcca SPRINT 7 - Business Intelligence & UX (v1.7.0) | **~2-3 semanas (P2)**",
+      "id": "backlog_sprint_5_design_system_ux_refactor_v1_5_0_3_4_semanas_p1",
+      "label": "\ud83c\udfa8 SPRINT 5 - Design System & UX Refactor (v1.5.0) | **~3-4 semanas (P1)**",
       "_origin": "ast",
       "community": 3,
       "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "\ud83d\udcca sprint 7 - business intelligence & ux (v1.7.0) | **~2-3 semanas (p2)**",
+      "norm_label": "\ud83c\udfa8 sprint 5 - design system & ux refactor (v1.5.0) | **~3-4 semanas (p1)**",
       "source_file": "BACKLOG.md",
-      "source_location": "L101"
-    },
-    {
-      "id": "backlog_sprint_8_engagement_comms_v1_8_0_2_3_semanas_p3",
-      "label": "\ud83d\udd14 SPRINT 8 - Engagement & Comms (v1.8.0) | **~2-3 semanas (P3)**",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\ud83d\udd14 sprint 8 - engagement & comms (v1.8.0) | **~2-3 semanas (p3)**",
-      "source_file": "BACKLOG.md",
-      "source_location": "L111"
+      "source_location": "L103"
     },
     {
       "id": "backlog_tirilla_de_venta_recibo_pos_80mm_t\u00e9rmica",
@@ -5494,6 +5554,36 @@
       "source_location": "L1"
     },
     {
+      "id": "test_inventory",
+      "label": "test_inventory.sh",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "test_inventory.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "test_inventory.sh",
+      "source_file": "test_inventory.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_inventory_sh__entry",
+      "label": "test_inventory.sh script",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "test_inventory.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "test_inventory.sh script",
+      "source_file": "test_inventory.sh",
+      "source_location": "L1"
+    },
+    {
       "id": "pos_saas_software_architecture_handbook_1_0",
       "label": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "_origin": "ast",
@@ -6567,24 +6657,13 @@
     },
     {
       "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
-      "target": "backlog_sprint_7_business_intelligence_ux_v1_7_0_2_3_semanas_p2",
+      "target": "backlog_sprint_5_design_system_ux_refactor_v1_5_0_3_4_semanas_p1",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L101",
-      "weight": 1.0
-    },
-    {
-      "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
-      "target": "backlog_sprint_8_engagement_comms_v1_8_0_2_3_semanas_p3",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "BACKLOG.md",
-      "source_location": "L111",
+      "source_location": "L103",
       "weight": 1.0
     },
     {
@@ -6595,7 +6674,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L119",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -6633,7 +6712,7 @@
     },
     {
       "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
-      "target": "backlog_sprint_3_pr\u00f3ximo_sprint_v1_3_0_planificaci\u00f3n",
+      "target": "backlog_sprint_3_business_intelligence_ux_v1_3_0_2_3_semanas_p2",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6644,13 +6723,13 @@
     },
     {
       "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
-      "target": "backlog_sprint_4_v1_4_0_icebox",
+      "target": "backlog_sprint_4_engagement_comms_v1_4_0_2_3_semanas_p3",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L93",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -6731,6 +6810,39 @@
       "weight": 1.0
     },
     {
+      "source": "backlog_sprint_5_design_system_ux_refactor_v1_5_0_3_4_semanas_p1",
+      "target": "backlog_design_system_foundation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BACKLOG.md",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "backlog_sprint_5_design_system_ux_refactor_v1_5_0_3_4_semanas_p1",
+      "target": "backlog_pos_refactor_flujo_cr\u00edtico",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BACKLOG.md",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "backlog_sprint_5_design_system_ux_refactor_v1_5_0_3_4_semanas_p1",
+      "target": "backlog_accesibilidad_polish",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BACKLOG.md",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
       "source": "backup",
       "target": "backup_sh__entry",
       "relation": "contains",
@@ -6754,29 +6866,7 @@
     },
     {
       "source": "changelog_1_1_0_2026_10_07",
-      "target": "changelog_added_16",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_1_1_0_2026_10_07",
-      "target": "changelog_fixed",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L24",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_1_1_0_2026_10_07",
-      "target": "changelog_security",
+      "target": "changelog_added_27",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6787,35 +6877,68 @@
     },
     {
       "source": "changelog_1_1_0_2026_10_07",
-      "target": "changelog_changed",
+      "target": "changelog_fixed",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L31",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_1_1_0_2026_10_07",
+      "target": "changelog_security",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_1_1_0_2026_10_07",
+      "target": "changelog_changed_42",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
       "source": "changelog_1_2_0_2026_10_09",
+      "target": "changelog_added_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_1_3_0_2026_10_09",
       "target": "changelog_added",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L11",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
-      "source": "changelog_changelog",
-      "target": "changelog_1_1_0_2026_10_07",
+      "source": "changelog_1_3_0_2026_10_09",
+      "target": "changelog_changed",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -6826,7 +6949,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L9",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_1_1_0_2026_10_07",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_1_3_0_2026_10_09",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -11538,6 +11683,17 @@
       "weight": 1.0
     },
     {
+      "source": "test_inventory",
+      "target": "test_inventory_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test_inventory.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "update_components",
       "target": "update_components_sh__entry",
       "relation": "contains",
@@ -11550,5 +11706,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ea1044c76e3d786909a98d45e467754b3b0fd8f1"
+  "built_at_commit": "1bd948010325958fea6305210d6c1eac12d546fd"
 }
