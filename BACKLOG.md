@@ -100,6 +100,21 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 ---
 
+## ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**
+
+- [x] **Arquitectura y Modelado de Ajustes por Bounded Context**:
+  - Migración `V23__create_settings_tables.sql` con tablas tipadas por dominio: `tenant_sales_settings`, `tenant_inventory_settings`, `tenant_cash_settings`.
+  - Endpoints REST desacoplados para configuración comercial, ventas, inventario y caja.
+- [x] **Seguridad y Reglas Críticas en Backend**:
+  - **Arqueo Ciego**: Ocultación de saldos esperados a cajeros en `CashController` a través de `CashSessionResponseDto`.
+  - **Existencias Negativas**: Bloqueo o habilitación condicional en `InventoryService` gobernado por la política del tenant.
+  - **Límites de Descuento**: Validación de umbrales máximos al rol cajero en `SaleService`.
+- [x] **Panel de Configuración y Navegación Modular (Frontend)**:
+  - Hub Central `/settings` con las 10 secciones operativas, estados y prioridades.
+  - Formularios dedicados con tabs `SettingsNav`: Negocio (`/settings/business`), Ventas (`/settings/sales`), Caja (`/settings/cash`), Inventario (`/settings/inventory`) e integración con Tirilla (`/settings/receipt`).
+
+---
+
 ## 🎨 SPRINT 5 - Design System & UX Refactor (v1.5.0) | **~3-4 semanas (P1)**
 
 *Fundación visual y refactor del flujo crítico POS — base para escalar UI consistente*
