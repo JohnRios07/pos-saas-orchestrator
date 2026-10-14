@@ -8,6 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Plan Separe (Layaway Module)**:
+  - **Backend**:
+    - Introduced Flyway migration `V30__add_reserved_quantity_to_inventory.sql` adding `reserved_quantity NUMERIC(14,3)` with non-negative check constraint.
+    - Added Flyway migration `V31__create_layaway_module_tables.sql` creating `tenant_layaway_sequences`, `layaway_plans`, `layaway_plan_items`, and `layaway_payments`.
+    - Implemented `LayawayPlan`, `LayawayPlanItem`, `LayawayPayment`, and `LayawayStatus` domain entities.
+    - Atomic inventory reservation engine: enforces `Stock Disponible = Físico - Reservado` preventing regular sales from overselling reserved inventory.
+    - Deposit validations: enforced minimum 20% down payment with exact `BigDecimal` arithmetic.
+    - Financial isolation: cash deposits registered in active cashier cash drawer (`IN`), but final delivery settlement registers a `LAYAWAY` payment method with zero physical cash movement to prevent double accounting.
+    - Cancellation policy: stock released back to available inventory and automatic issuance of commercial `CreditNote` (strict no-cash-refund policy).
+    - Expiration & delivery controls: 45-day validity window with automated batch expiration endpoint `POST /api/layaway/expire-overdue` and blocking of payments/deliveries on expired plans.
+    - Added comprehensive integration tests in `LayawayServiceIntegrationTest`.
+  - **Frontend**:
+    - Created Layaway Dashboard (`/layaway`) with real-time KPI metrics (receivable balance, plans expiring in <= 7 days, completed deliveries), status tabs, and customer/plan search.
+    - Implemented atomic workflow modals: `CreateLayawayModal` (with 20% deposit auto-calculation and product picker), `LayawayPaymentModal` (additional deposits), `LayawayCancelModal` (Credit Note generation option), and `LayawayDetailModal` (detailed timeline and delivery trigger).
+    - Built thermal 80 mm printable receipt (`LayawayReceiptModal`) with mandatory legal disclaimer stating it is a deposit receipt and not an official sale invoice.
+    - Integrated with sidebar navigation and lazy-loaded routing.
+    - Added unit tests in `LayawayPage.test.tsx`.
 - **Tenant Configuration & Settings Module**:
   - **Backend**:
     - Added Flyway migration `V23__create_settings_tables.sql` with isolated typed tables (`tenant_sales_settings`, `tenant_inventory_settings`, `tenant_cash_settings`) and default tenant seeding.

@@ -115,6 +115,29 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 ---
 
+## 🛍️ MÓDULO PLAN SEPARE / LAYAWAY (v1.4.0) | **Completado**
+
+- [x] **Arquitectura y Modelo de Dominio (Bounded Context `layaway`)**:
+  - Migración `V30__add_reserved_quantity_to_inventory.sql`: Columna `reserved_quantity NUMERIC(14,3)` con restricción check no negativa.
+  - Migración `V31__create_layaway_module_tables.sql`: Tablas aisladas por tenant (`tenant_layaway_sequences`, `layaway_plans`, `layaway_plan_items`, `layaway_payments`).
+  - Entidades `LayawayPlan`, `LayawayPlanItem`, `LayawayPayment`, y enum `LayawayStatus` (`ACTIVE`, `FULLY_PAID`, `PENDING_INVOICE`, `PENDING_DELIVERY`, `COMPLETED`, `EXPIRED`, `CANCELLED`).
+  - Generador de secuencias atómico por tenant para planes (`#00000001`) y recibos (`#00000001`).
+- [x] **Reglas de Negocio e Invariantes Críticas**:
+  - **Abono inicial mínimo del 20%**: Validación estricta con aritmética exacta (`BigDecimal`).
+  - **Reserva atómica de inventario**: `Stock Disponible = Físico - Reservado`. Bloqueo preventivo en ventas ordinarias ante stock comprometido.
+  - **Congelación de precios históricos**: Precios congelados en `layaway_plan_items` sin afectación por fluctuaciones del catálogo.
+  - **Gestión financiera y de caja**: Abonos en efectivo ingresan al turno de caja activo del cajero (`IN`). Liquidación final usa método `LAYAWAY` con cero movimiento en caja física para evitar doble contabilización.
+  - **Control de vencimientos (45 días)**: Detección y bloqueo automático de abonos y entregas en planes vencidos, endpoint de expiración masiva `POST /api/layaway/expire-overdue`.
+  - **Cancelaciones sin salida de dinero**: Liberación inmediata de stock reservado y emisión de Nota de Crédito comercial (`CreditNote`) al cliente.
+  - **Entrega atómica y venta definitiva**: Descuento físico de inventario y generación del registro de venta oficial al liquidar el 100%.
+- [x] **Experiencia de Usuario y Frontend**:
+  - Vista principal `/layaway` con KPIs en tiempo real (Saldo por cobrar, planes por vencer en ≤ 7 días, completados), pestañas de filtrado y búsqueda.
+  - Modales dedicados: creación de plan con selector de productos y validación del 20%, registro de abonos adicionales con validación de saldo, cancelación con generación de Nota de Crédito, y detalle exhaustivo con timeline.
+  - Comprobante térmico de 80 mm imprimible para cada abono con disclaimer legal explícito ("ESTE DOCUMENTO ES UN COMPROBANTE DE ABONO - NO ES UNA FACTURA DE VENTA").
+  - Tests unitarios en `LayawayPage.test.tsx` e integración con menú y rutas lazy.
+
+---
+
 ## 🎨 SPRINT 5 - Design System & UX Refactor (v1.5.0) | **~3-4 semanas (P1)**
 
 *Fundación visual y refactor del flujo crítico POS — base para escalar UI consistente*
