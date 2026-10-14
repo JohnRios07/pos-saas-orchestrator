@@ -28,3 +28,4 @@ target/
 # Internal repos (submódulos o repos separados)
 pos-backend/
 pos-frontend/
+pos-mcp-server/
