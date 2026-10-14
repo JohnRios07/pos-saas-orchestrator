@@ -17,65 +17,11 @@
     "ast_hash": "c1dedc17baa500f614f263abe69a52b4",
     "semantic_hash": "c1dedc17baa500f614f263abe69a52b4"
   },
-  "fix_cash.sh": {
-    "mtime": 1791207314.791296,
-    "seen": 1791580541.503965,
-    "ast_hash": "856d17770aa36a5c1d3e7106a41f0598",
-    "semantic_hash": "856d17770aa36a5c1d3e7106a41f0598"
-  },
-  "fix_dashboard.sh": {
-    "mtime": 1791209390.8528018,
-    "seen": 1791580541.5039656,
-    "ast_hash": "998462ad9f3a882b75485270af86534f",
-    "semantic_hash": "998462ad9f3a882b75485270af86534f"
-  },
-  "fix_endpoints.sh": {
-    "mtime": 1791575511.236732,
-    "seen": 1791580541.503966,
-    "ast_hash": "465c3983eaae09c1b844c480879bbd4f",
-    "semantic_hash": "465c3983eaae09c1b844c480879bbd4f"
-  },
   "fix_inputs.js": {
     "mtime": 1791202284.7377775,
     "seen": 1791580541.5039673,
     "ast_hash": "47b61dee728db4f0af193e39cfadc825",
     "semantic_hash": "47b61dee728db4f0af193e39cfadc825"
-  },
-  "fix_inv.sh": {
-    "mtime": 1791207328.5193377,
-    "seen": 1791580541.5039678,
-    "ast_hash": "702c85d47d7d7371b820b058fd7553b2",
-    "semantic_hash": "702c85d47d7d7371b820b058fd7553b2"
-  },
-  "fix_login.sh": {
-    "mtime": 1791212450.0663593,
-    "seen": 1791580541.5039682,
-    "ast_hash": "75a63caad31f2130826cf39d1ec08947",
-    "semantic_hash": "75a63caad31f2130826cf39d1ec08947"
-  },
-  "fix_payment_dto.sh": {
-    "mtime": 1791209403.079336,
-    "seen": 1791580541.5039687,
-    "ast_hash": "85d3d9432241278caa84ea3395351a4c",
-    "semantic_hash": "85d3d9432241278caa84ea3395351a4c"
-  },
-  "fix_products.sh": {
-    "mtime": 1791207345.8191404,
-    "seen": 1791580541.5039692,
-    "ast_hash": "6de8da0525129c6d767d4476d5a3f91b",
-    "semantic_hash": "6de8da0525129c6d767d4476d5a3f91b"
-  },
-  "fix_sales.sh": {
-    "mtime": 1791207221.4813538,
-    "seen": 1791580541.5039701,
-    "ast_hash": "eacdf3184a324d0796458c1d731739a7",
-    "semantic_hash": "eacdf3184a324d0796458c1d731739a7"
-  },
-  "fix_sales_tofixed.sh": {
-    "mtime": 1791207281.6466122,
-    "seen": 1791580541.5039709,
-    "ast_hash": "152ac109e39a3619dae143b4e0f165d9",
-    "semantic_hash": "152ac109e39a3619dae143b4e0f165d9"
   },
   "fix_service.py": {
     "mtime": 1791575548.7709024,
@@ -83,35 +29,11 @@
     "ast_hash": "91e75f23a030ae616fa68166a35ccb65",
     "semantic_hash": "91e75f23a030ae616fa68166a35ccb65"
   },
-  "fix_test.sh": {
-    "mtime": 1791212167.3349922,
-    "seen": 1791580541.5039718,
-    "ast_hash": "ad79f3becefb228a765b9ff5572de20c",
-    "semantic_hash": "ad79f3becefb228a765b9ff5572de20c"
-  },
-  "fix_test_after.sh": {
-    "mtime": 1791212183.7518759,
-    "seen": 1791580541.5039723,
-    "ast_hash": "fbb00fbc32e94a60ee92288a0afff92d",
-    "semantic_hash": "fbb00fbc32e94a60ee92288a0afff92d"
-  },
-  "fix_uuids.sh": {
-    "mtime": 1791212101.2915394,
-    "seen": 1791580541.5039728,
-    "ast_hash": "372effc6b4c3174e0546e6e1823f120d",
-    "semantic_hash": "372effc6b4c3174e0546e6e1823f120d"
-  },
   "patch_api.js": {
     "mtime": 1791203639.4480102,
     "seen": 1791580541.5039735,
     "ast_hash": "fd4f445938f253e7833e1a5e701a339c",
     "semantic_hash": "fd4f445938f253e7833e1a5e701a339c"
-  },
-  "patch_cash.sh": {
-    "mtime": 1791201980.7854493,
-    "seen": 1791580541.503974,
-    "ast_hash": "21cd476dfa65c2cc558927fd67db4a7f",
-    "semantic_hash": "21cd476dfa65c2cc558927fd67db4a7f"
   },
   "patch_cash_close.js": {
     "mtime": 1791203594.9305258,
@@ -131,23 +53,11 @@
     "ast_hash": "0cb1db7dab410e785298c6be2eb27d3b",
     "semantic_hash": "0cb1db7dab410e785298c6be2eb27d3b"
   },
-  "patch_cash_inputs.sh": {
-    "mtime": 1791202086.3347607,
-    "seen": 1791580541.5039763,
-    "ast_hash": "acd90f2e8c5e9fd580b1701f2aa06c80",
-    "semantic_hash": "acd90f2e8c5e9fd580b1701f2aa06c80"
-  },
   "patch_cash_notes.js": {
     "mtime": 1791204588.060697,
     "seen": 1791580541.503977,
     "ast_hash": "b5defc575d7478d900aeef7db683217f",
     "semantic_hash": "b5defc575d7478d900aeef7db683217f"
-  },
-  "patch_cash_payloads.sh": {
-    "mtime": 1791202222.7190206,
-    "seen": 1791580541.5039775,
-    "ast_hash": "07d49c4328774b14b3f9069d04f0fabe",
-    "semantic_hash": "07d49c4328774b14b3f9069d04f0fabe"
   },
   "patch_cash_service.js": {
     "mtime": 1791204617.5360913,
@@ -155,35 +65,11 @@
     "ast_hash": "2bbcf95996168c7ddbe61cd94616a0e6",
     "semantic_hash": "2bbcf95996168c7ddbe61cd94616a0e6"
   },
-  "patch_docs.sh": {
-    "mtime": 1791304907.464234,
-    "seen": 1791580541.5039785,
-    "ast_hash": "7ae277c84fed909b0248762da527884e",
-    "semantic_hash": "7ae277c84fed909b0248762da527884e"
-  },
-  "patch_domain_userId.sh": {
-    "mtime": 1791203207.0446203,
-    "seen": 1791580541.503979,
-    "ast_hash": "d5d69e4ef3dd0def189733f74ad191db",
-    "semantic_hash": "d5d69e4ef3dd0def189733f74ad191db"
-  },
   "patch_inputs.js": {
     "mtime": 1791311376.991412,
     "seen": 1791580541.5039794,
     "ast_hash": "a8fe13409c69c84a3b9acb77a38f3928",
     "semantic_hash": "a8fe13409c69c84a3b9acb77a38f3928"
-  },
-  "patch_inventory.sh": {
-    "mtime": 1791194680.629117,
-    "seen": 1791580541.50398,
-    "ast_hash": "174468cf922e3527cd8838d1364ef878",
-    "semantic_hash": "174468cf922e3527cd8838d1364ef878"
-  },
-  "patch_inventory_table.sh": {
-    "mtime": 1791195609.7707262,
-    "seen": 1791580541.5039809,
-    "ast_hash": "dba91a1f2cb4799ac0d432cb0d4db638",
-    "semantic_hash": "dba91a1f2cb4799ac0d432cb0d4db638"
   },
   "patch_sale_entity.js": {
     "mtime": 1791204538.939012,
@@ -238,12 +124,6 @@
     "seen": 1791580541.5041022,
     "ast_hash": "b0d4f27ef4018bcfdc39946e844f2ba4",
     "semantic_hash": "b0d4f27ef4018bcfdc39946e844f2ba4"
-  },
-  "update_components.sh": {
-    "mtime": 1791212464.9091547,
-    "seen": 1791580541.5041027,
-    "ast_hash": "e889d432a5a6dc09d91f089eed1616e7",
-    "semantic_hash": "e889d432a5a6dc09d91f089eed1616e7"
   },
   ".atl/.skill-registry.cache.json": {
     "mtime": 1791580548.9841874,

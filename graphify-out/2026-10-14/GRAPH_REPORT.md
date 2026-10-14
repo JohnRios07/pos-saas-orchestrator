@@ -1,17 +1,17 @@
-# Graph Report - pos  (2026-10-13)
+# Graph Report - pos  (2026-10-14)
 
 ## Corpus Check
-- 52 files · ~23,772 words
+- 52 files · ~24,340 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 2, .example 1, .gz 1)
 
 ## Summary
-- 524 nodes · 488 edges · 75 communities (50 shown, 25 thin omitted)
+- 525 nodes · 489 edges · 75 communities (50 shown, 25 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b15aec81`
+- Built from commit: `022fd466`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -95,8 +95,8 @@
 3. `Design: Sprint 1 - Cash Session Resilience & Validation` - 12 edges
 4. `Decisión consolidada` - 11 edges
 5. `Proposal: Sprint 1 - Cash Session Resilience & Validation` - 11 edges
-6. `2. Requisitos funcionales` - 10 edges
-7. `Backlog: V2 - Camino a Producción` - 9 edges
+6. `Backlog: V2 - Camino a Producción` - 10 edges
+7. `2. Requisitos funcionales` - 10 edges
 8. `5.3 Agregados principales` - 9 edges
 9. `26. ADR - Decisiones arquitectónicas` - 9 edges
 10. `ADR-XXX - Título` - 9 edges
@@ -123,7 +123,7 @@ Nodes (17): Change ID, Definition of Done, Parallel Execution, Phase 1: Foundati
 
 ### Community 3 - "Backlog: V2 - Camino a Producción"
 Cohesion: 0.10
-Nodes (19): Accesibilidad & Polish, Backlog: V2 - Camino a Producción, Design System Foundation, Deuda Técnica (Testing & QA), Funcionalidad de Negocio, ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**, Notas de Crédito y Mejoras UX, Operaciones e Infraestructura (+11 more)
+Nodes (20): Accesibilidad & Polish, Backlog: V2 - Camino a Producción, Design System Foundation, Deuda Técnica (Testing & QA), Funcionalidad de Negocio, ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**, 🛍️ MÓDULO PLAN SEPARE / LAYAWAY (v1.4.0) | **Completado**, Notas de Crédito y Mejoras UX (+12 more)
 
 ### Community 4 - "ref_fs"
 Cohesion: 0.05
@@ -328,4 +328,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Tasks: Sprint 1 - Cash Session Resilience & Validation` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Backlog: V2 - Camino a Producción` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
