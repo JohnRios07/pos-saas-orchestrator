@@ -86,9 +86,9 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 *Reportes, mejoras de UX y calidad*
 
-- [ ] **Reportes Gerenciales y Margen de Utilidad** (#19): Dashboard financiero con cálculo de ventas netas, costo de mercancía vendida (COGS) y margen de utilidad bruta (`(Precio Venta - Costo Unitario)`), además del ranking de prendas más vendidas por categoría y talla.
+- [ ] **Reportes Gerenciales y Margen de Utilidad** (#19): Dashboard financiero inicial entregado (`/reporting/dashboard`: Ventas totales, ticket promedio y medios de pago con selector de rango de fechas). *Pendiente*: costo de mercancía vendida (COGS), margen de utilidad bruta (`Precio Venta - Costo Unitario`) y ranking de prendas más vendidas por categoría y talla.
 - [x] **Expandir Detalle de Venta en Historial** (#27): En `SalesHistory.tsx`, cada fila de la tabla debe ser expandible (click en fila o icono chevron) para mostrar el detalle de productos de esa venta: lista de items con SKU, nombre, talla, color, cantidad, precio unitario, subtotal. Cargar bajo demanda (lazy) vía `GET /api/sales/{id}/items` o incluir en respuesta de `/api/sales` con flag `?includeItems=true`.
-- [ ] **Tests Unitarios y de Integración: Concurrencia NC** (#70): Pruebas de concurrencia en la redención de saldos, validación de estados de la NC, reingreso a inventario y comprobación de que la caja no sufra egresos monetarios.
+- [ ] **Tests Unitarios y de Integración: Concurrencia NC** (#70): Bloqueo pesimista (`@Lock(LockModeType.PESSIMISTIC_WRITE)`) implementado en `CreditNoteRepository` y pruebas de integración de devoluciones sin egreso en `SaleServiceIntegrationTest`. *Pendiente*: suite automatizada específica de concurrencia multihilo en redención simultánea.
 
 ---
 
@@ -97,6 +97,23 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 *Notificaciones y comunicaciones*
 
 - [ ] **Notificaciones a Clientes** (#24): Implementar envío automático de comprobantes (Recibos PDF) y alertas mediante Email y/o WhatsApp.
+
+---
+
+## 📦 MÓDULO DE COMPRAS & COSTO PROMEDIO / PURCHASING (v1.4.0) | **Completado**
+
+- [x] **Rediseño del Bounded Context Purchasing (Backend)**:
+  - Separación de orden de compra (`Purchase`) y recepción de mercancía (`GoodsReceipt`) siguiendo el estándar DDD.
+  - Migración Flyway `V22__redesign_purchasing_orders_and_receipts.sql` y generador secuencial atómico (`tenant_purchase_sequences`) para consecutivo `OC-XXXX`.
+- [x] **Recepciones Parciales y Kardex**:
+  - Procesamiento físico de mercancía con control de diferencias y transiciones de estado (`PENDING` -> `PARTIALLY_RECEIVED` -> `RECEIVED`).
+  - Disparo de movimientos y eventos de inventario consistentes con trazabilidad a la orden de compra.
+- [x] **Cálculo de Costo Promedio Ponderado (CPP)**:
+  - Recálculo en `InventoryService` de CPP sobre compras recibidas y actualización automática del costo de reposición en variantes del catálogo (`product_variants`).
+- [x] **UI/UX del Módulo de Compras (Frontend)**:
+  - Tabla de órdenes de compra con filtros de estado y saldos pendientes (`PurchaseOrdersTable`).
+  - Formulario de creación de órdenes con selectores numéricos y cálculo automático de IVA (19%) en `CreatePurchaseOrder`.
+  - Modal de verificación física de mercancía (`GoodsReceiptModal`) con badges de diferencias y atajo rápido `F2` para confirmación.
 
 ---
 
@@ -143,25 +160,25 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 *Fundación visual y refactor del flujo crítico POS — base para escalar UI consistente*
 
 ### Design System Foundation
-- [ ] **Design Tokens en Tailwind** — Configurar `tailwind.config.js` con paleta semántica (primary/success/warning/danger/neutral), escala spacing 4px, tipografía (headings/body/label), border-radius, sombras
-- [ ] **Biblioteca de primitivas UI** — Extraer y estandarizar: `Button`, `Input`, `Select`, `Modal`, `Table`, `Badge`, `Card`, `Toast`, `Spinner`, `Skeleton`, `EmptyState` en `src/components/ui/`
-- [ ] **Form Library Adoption** — Integrar React Hook Form + Zod; migrar `Sales.tsx` y `CashManagement.tsx` como pilotos
-- [ ] **Hooks de formato centralizados** — `useCurrency()`, `useNumberFormat()`, `useDateFormat()` eliminando 5+ duplicaciones de `Intl.NumberFormat`
+- [x] **Design Tokens en Tailwind** — Configurados en CSS vía directivas `@theme` de Tailwind v4 en `src/index.css` con paleta semántica (primary, secondary, background, success, error, warning) y tipografía sans.
+- [ ] **Biblioteca de primitivas UI** — Primitivas atómicas creadas y estandarizadas en `src/components/ui/` (`Button`, `Input`, `Card`, `Badge`, `Skeleton`). *Pendientes*: `Select`, `Modal`, `Table`, `Toast`, `Spinner`, `EmptyState`.
+- [ ] **Form Library Adoption** — `react-hook-form` + `zod` adoptados en `PaymentModal.tsx` con esquemas y `zodResolver`. *Pendiente*: migrar formulario de `CashManagement.tsx`.
+- [x] **Hooks y utilidades de formato centralizados** — Centralizado en `src/lib/formatters.ts` (`formatCurrency`, `formatDate`, `formatDateTime`, `setFormatLocale`), eliminando duplicaciones de `Intl.NumberFormat`.
 
 ### POS Refactor (Flujo Crítico)
-- [ ] **Descomponer `Sales.tsx` (793 líneas)** en componentes enfocados:
-  - `ProductSelector` — búsqueda/selección producto + variantes
-  - `CartPanel` — carrito, descuentos globales, subtotales
-  - `CustomerSelector` — Final / Registrado / Nuevo (inline form)
-  - `PaymentModal` — multi-pago (Efectivo/Transfer/NC) con auto-balance
-  - `CreditNoteSection` — validación y redención integrada al cálculo de pago
+- [x] **Descomponer `Sales.tsx` (793 líneas)** — Descompuesto a ~340 líneas en componentes desacoplados del bounded context `features/sales`:
+  - `ProductSelector` — búsqueda/selección producto + variantes (`VariantSelectionModal`)
+  - `CartPanel` — carrito reactivo, descuentos globales, subtotales (`useCartStore`)
+  - `CustomerSearchBar` / `CustomerQuickForm` / `CustomerSelector` — gestión y selección de clientes
+  - `PaymentModal` — multi-pago (Efectivo/Transfer/NC) con validación y auto-balance
+  - `CreditNoteSection` — validación y redención integrada en modal de pago
 - [x] **Skeletons de carga** — Todas las tablas (Kardex, Inventario, Historial, Productos) con `Skeleton` component
-- [ ] **Atajos de teclado POS** — F1-F12, Enter, Escape, números rápidos para cajeros
+- [x] **Atajos de teclado POS** — Implementados: `Cmd+K` / `Ctrl+K` (búsqueda de productos), `F2` (abrir pasarela de pago), `Escape` (cerrar modales).
 - [ ] **Sistema unificado de errores** — Field-level (inline), Toast (global), Banner (page-level) con códigos backend
 
 ### Accesibilidad & Polish
 - [ ] **Auditoría ARIA** — Modals (`aria-modal`, `aria-labelledby`), selects, focus management, keyboard nav
-- [ ] **Store ID como dropdown** — `Inventory.tsx` usar store del contexto auth en lugar de input libre
+- [x] **Store ID como dropdown / contexto** — `Inventory.tsx` y `KardexTab.tsx` eliminaron inputs libres de texto y leen reactivamente la tienda del contexto de sesión (`useAuthStore`).
 - [ ] **i18n structure** — Extraer strings hardcodeados a `src/i18n/` (preparar ES/EN)
 
 ---
