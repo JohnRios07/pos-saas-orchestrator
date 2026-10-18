@@ -1,0 +1,92 @@
+{
+  ".engram/config.json": {
+    "mtime": 1791418067.0448933,
+    "seen": 1791580541.503959,
+    "ast_hash": "0b6ad43351bf6fb69722f7e824bf5148",
+    "semantic_hash": "0b6ad43351bf6fb69722f7e824bf5148"
+  },
+  ".opencode/opencode.json": {
+    "mtime": 1791581191.1707208,
+    "seen": 1791583969.582841,
+    "ast_hash": "e5f74d14a81702b55bdf53b33ec991d7",
+    "semantic_hash": ""
+  },
+  "backup.sh": {
+    "mtime": 1791321549.3408449,
+    "seen": 1791580541.5039642,
+    "ast_hash": "c1dedc17baa500f614f263abe69a52b4",
+    "semantic_hash": "c1dedc17baa500f614f263abe69a52b4"
+  },
+  ".atl/.skill-registry.cache.json": {
+    "mtime": 1791580548.9841874,
+    "seen": 1791580568.9432616,
+    "ast_hash": "6b953bac1d85f6f216b96868309711a6",
+    "semantic_hash": "6b953bac1d85f6f216b96868309711a6"
+  },
+  "local_dump.sql": {
+    "mtime": 1791345011.3379686,
+    "seen": 1791580568.9436002,
+    "ast_hash": "8c3348ea1911572b6fa0f5f42aea2f16",
+    "semantic_hash": "8c3348ea1911572b6fa0f5f42aea2f16"
+  },
+  ".atl/skill-registry.md": {
+    "mtime": 1791580548.891187,
+    "seen": 1791583969.5828702,
+    "ast_hash": "02c1be1b33e52c49d7e2539ff30a3e38",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1791580526.630098,
+    "seen": 1791583969.5828714,
+    "ast_hash": "8999567f59210d7c78671d6a21a6654a",
+    "semantic_hash": ""
+  },
+  "BACKLOG.md": {
+    "mtime": 1792008186.3286533,
+    "seen": 1792008225.885136,
+    "ast_hash": "7faf247eb68fbb2e917f49632c7cdbe4",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1792008147.0394654,
+    "seen": 1792008225.8851366,
+    "ast_hash": "c7dbf5cd2dbce5f807b7c172fd2ebe51",
+    "semantic_hash": ""
+  },
+  "POS_SaaS_Software_Architecture_Handbook_1.0.md": {
+    "mtime": 1791351639.6475894,
+    "seen": 1791583969.5828738,
+    "ast_hash": "c2439fc9bb270fff78036ecda6109b24",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1791435571.0719125,
+    "seen": 1791583969.582874,
+    "ast_hash": "cc300ad63e7928b2ef0ee16c25cbf384",
+    "semantic_hash": ""
+  },
+  "openspec/changes/sprint-1-cash-session/design.md": {
+    "mtime": 1791449494.5239,
+    "seen": 1791583969.5828748,
+    "ast_hash": "4c58b51b2f1940d6a601cffb2cb0c6e1",
+    "semantic_hash": ""
+  },
+  "openspec/changes/sprint-1-cash-session/proposal.md": {
+    "mtime": 1791449317.6848562,
+    "seen": 1791583969.5828757,
+    "ast_hash": "8b2961bcade183f841e6ebb444567aa0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/sprint-1-cash-session/spec.md": {
+    "mtime": 1791449400.428217,
+    "seen": 1791583969.5828762,
+    "ast_hash": "30ff2c426db585f896f83d3cb90edcd4",
+    "semantic_hash": ""
+  },
+  "openspec/changes/sprint-1-cash-session/tasks.md": {
+    "mtime": 1791571426.5155041,
+    "seen": 1791583969.5828767,
+    "ast_hash": "7aaf3b6dc1ed05710c3c64de9470c980",
+    "semantic_hash": ""
+  }
+}

@@ -2908,7 +2908,7 @@
       "node_kind": "heading",
       "norm_label": "accesibilidad & polish",
       "source_file": "BACKLOG.md",
-      "source_location": "L162"
+      "source_location": "L179"
     },
     {
       "id": "backlog_backlog_v2_camino_a_producci\u00f3n",
@@ -2932,7 +2932,7 @@
       "node_kind": "heading",
       "norm_label": "design system foundation",
       "source_file": "BACKLOG.md",
-      "source_location": "L145"
+      "source_location": "L162"
     },
     {
       "id": "backlog_deuda_t\u00e9cnica_testing_qa",
@@ -2959,6 +2959,18 @@
       "source_location": "L17"
     },
     {
+      "id": "backlog_m\u00f3dulo_de_compras_costo_promedio_purchasing_v1_4_0_completado",
+      "label": "\ud83d\udce6 M\u00d3DULO DE COMPRAS & COSTO PROMEDIO / PURCHASING (v1.4.0) | **Completado**",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Backlog: V2 - Camino a Producci\u00f3n",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udce6 modulo de compras & costo promedio / purchasing (v1.4.0) | **completado**",
+      "source_file": "BACKLOG.md",
+      "source_location": "L103"
+    },
+    {
       "id": "backlog_m\u00f3dulo_de_configuraci\u00f3n_pol\u00edticas_tenant_v1_3_0_completado",
       "label": "\u2699\ufe0f M\u00d3DULO DE CONFIGURACI\u00d3N & POL\u00cdTICAS TENANT (v1.3.0) | **Completado**",
       "_origin": "ast",
@@ -2968,7 +2980,7 @@
       "node_kind": "heading",
       "norm_label": "\u2699\ufe0f modulo de configuracion & politicas tenant (v1.3.0) | **completado**",
       "source_file": "BACKLOG.md",
-      "source_location": "L103"
+      "source_location": "L120"
     },
     {
       "id": "backlog_m\u00f3dulo_plan_separe_layaway_v1_4_0_completado",
@@ -2980,7 +2992,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udecd\ufe0f modulo plan separe / layaway (v1.4.0) | **completado**",
       "source_file": "BACKLOG.md",
-      "source_location": "L118"
+      "source_location": "L135"
     },
     {
       "id": "backlog_notas_de_cr\u00e9dito_y_mejoras_ux",
@@ -3016,7 +3028,7 @@
       "node_kind": "heading",
       "norm_label": "\u2696\ufe0f paralelo - facturacion electronica (legal/blocker) | **lead time: semanas**",
       "source_file": "BACKLOG.md",
-      "source_location": "L169"
+      "source_location": "L186"
     },
     {
       "id": "backlog_pos_refactor_flujo_cr\u00edtico",
@@ -3028,7 +3040,7 @@
       "node_kind": "heading",
       "norm_label": "pos refactor (flujo critico)",
       "source_file": "BACKLOG.md",
-      "source_location": "L151"
+      "source_location": "L168"
     },
     {
       "id": "backlog_resumen_t\u00e9cnico_y_arquitectura_entregada_sprint_1",
@@ -3124,7 +3136,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83c\udfa8 sprint 5 - design system & ux refactor (v1.5.0) | **~3-4 semanas (p1)**",
       "source_file": "BACKLOG.md",
-      "source_location": "L141"
+      "source_location": "L158"
     },
     {
       "id": "backlog_tirilla_de_venta_recibo_pos_80mm_t\u00e9rmica",
@@ -3475,66 +3487,6 @@
       "source_location": "L954"
     },
     {
-      "id": "pos_saas_software_architecture_handbook_1_0_13_1_estados_de_purchaseorder",
-      "label": "13.1 Estados de PurchaseOrder",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "13. Compras y proveedores",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13.1 estados de purchaseorder",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1134"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_13_2_recepci\u00f3n",
-      "label": "13.2 Recepci\u00f3n",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "13. Compras y proveedores",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13.2 recepcion",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1144"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_13_3_precio_de_compra",
-      "label": "13.3 Precio de compra",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "13. Compras y proveedores",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13.3 precio de compra",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1158"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_13_4_proveedores",
-      "label": "13.4 Proveedores",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "13. Compras y proveedores",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13.4 proveedores",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1168"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_13_compras_y_proveedores",
-      "label": "13. Compras y proveedores",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "13. Compras y proveedores",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13. compras y proveedores",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1132"
-    },
-    {
       "id": "pos_saas_software_architecture_handbook_1_0_14_1_principios",
       "label": "14.1 Principios",
       "_origin": "ast",
@@ -3593,66 +3545,6 @@
       "norm_label": "14. pos y experiencia de usuario",
       "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "source_location": "L1180"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_16_1_datos",
-      "label": "16.1 Datos",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "16. CRM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16.1 datos",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1290"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_16_2_m\u00e9tricas",
-      "label": "16.2 M\u00e9tricas",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "16. CRM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16.2 metricas",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1307"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_16_3_segmentaci\u00f3n",
-      "label": "16.3 Segmentaci\u00f3n",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "16. CRM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16.3 segmentacion",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1319"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_16_4_consentimiento",
-      "label": "16.4 Consentimiento",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "16. CRM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16.4 consentimiento",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1332"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_16_crm",
-      "label": "16. CRM",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "16. CRM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16. crm",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1288"
     },
     {
       "id": "pos_saas_software_architecture_handbook_1_0_22_1_logs",
@@ -3773,30 +3665,6 @@
       "norm_label": "23. docker y despliegue",
       "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "source_location": "L1647"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_39_ap\u00e9ndice_ejemplo_de_estructura_de_repositorio",
-      "label": "39. Ap\u00e9ndice - Ejemplo de estructura de repositorio",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "39. Ap\u00e9ndice - Ejemplo de estructura de repositorio",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "39. apendice - ejemplo de estructura de repositorio",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L2362"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_documentaci\u00f3n_viva",
-      "label": "Documentaci\u00f3n viva",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "39. Ap\u00e9ndice - Ejemplo de estructura de repositorio",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "documentacion viva",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L2396"
     },
     {
       "id": "pos_saas_software_architecture_handbook_1_0_28_contratos_de_dominio",
@@ -4039,246 +3907,6 @@
       "source_location": "L2579"
     },
     {
-      "id": "pos_saas_software_architecture_handbook_1_0_18_1_eventos",
-      "label": "18.1 Eventos",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "18. Eventos de dominio y aplicaciones",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18.1 eventos",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1392"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_18_2_domain_event_vs_integration_event",
-      "label": "18.2 Domain Event vs Integration Event",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "18. Eventos de dominio y aplicaciones",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18.2 domain event vs integration event",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1407"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_18_3_outbox_futura",
-      "label": "18.3 Outbox futura",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "18. Eventos de dominio y aplicaciones",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18.3 outbox futura",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1416"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_18_eventos_de_dominio_y_aplicaciones",
-      "label": "18. Eventos de dominio y aplicaciones",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "18. Eventos de dominio y aplicaciones",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18. eventos de dominio y aplicaciones",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1390"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_20_1_mvp",
-      "label": "20.1 MVP",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "20. Offline y sincronizaci\u00f3n futura",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "20.1 mvp",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1506"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_20_2_preparaci\u00f3n",
-      "label": "20.2 Preparaci\u00f3n",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "20. Offline y sincronizaci\u00f3n futura",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "20.2 preparacion",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1511"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_20_3_futuro",
-      "label": "20.3 Futuro",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "20. Offline y sincronizaci\u00f3n futura",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "20.3 futuro",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1520"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_20_offline_y_sincronizaci\u00f3n_futura",
-      "label": "20. Offline y sincronizaci\u00f3n futura",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "20. Offline y sincronizaci\u00f3n futura",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "20. offline y sincronizacion futura",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1504"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_24_1_pipeline",
-      "label": "24.1 Pipeline",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "24. CI/CD",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "24.1 pipeline",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1701"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_24_2_branching",
-      "label": "24.2 Branching",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "24. CI/CD",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "24.2 branching",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1734"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_24_3_migraciones",
-      "label": "24.3 Migraciones",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "24. CI/CD",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "24.3 migraciones",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1748"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_24_ci_cd",
-      "label": "24. CI/CD",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "24. CI/CD",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "24. ci/cd",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1699"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_27_convenciones_de_c\u00f3digo",
-      "label": "27. Convenciones de c\u00f3digo",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "27. Convenciones de c\u00f3digo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "27. convenciones de codigo",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1861"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_java",
-      "label": "Java",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "27. Convenciones de c\u00f3digo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "java",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1863"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_sql",
-      "label": "SQL",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "27. Convenciones de c\u00f3digo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "sql",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1899"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_typescript",
-      "label": "TypeScript",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "27. Convenciones de c\u00f3digo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "typescript",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1891"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_4_1_contexto",
-      "label": "4.1 Contexto",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "4. Contexto y arquitectura C4",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.1 contexto",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L321"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_4_2_contenedores",
-      "label": "4.2 Contenedores",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "4. Contexto y arquitectura C4",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.2 contenedores",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L342"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_4_3_decisi\u00f3n",
-      "label": "4.3 Decisi\u00f3n",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "4. Contexto y arquitectura C4",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.3 decision",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L364"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_4_contexto_y_arquitectura_c4",
-      "label": "4. Contexto y arquitectura C4",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "4. Contexto y arquitectura C4",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. contexto y arquitectura c4",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L319"
-    },
-    {
       "id": "opencode_opencode",
       "label": "opencode.json",
       "_origin": "ast",
@@ -4504,42 +4132,6 @@
       "source_location": "L33"
     },
     {
-      "id": "pos_saas_software_architecture_handbook_1_0_control_del_documento",
-      "label": "Control del documento",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Software Architecture Handbook 1.0",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "control del documento",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L13"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_c\u00f3mo_usar_este_documento",
-      "label": "C\u00f3mo usar este documento",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Software Architecture Handbook 1.0",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "como usar este documento",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L45"
-    },
-    {
-      "id": "pos_saas_software_architecture_handbook_1_0_software_architecture_handbook_1_0",
-      "label": "Software Architecture Handbook 1.0",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Software Architecture Handbook 1.0",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "software architecture handbook 1.0",
-      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
-      "source_location": "L1"
-    },
-    {
       "id": "pos_saas_software_architecture_handbook_1_0",
       "label": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "_origin": "ast",
@@ -4550,6 +4142,282 @@
       "norm_label": "pos_saas_software_architecture_handbook_1.0.md",
       "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "source_location": "L1"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_13_1_estados_de_purchaseorder",
+      "label": "13.1 Estados de PurchaseOrder",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13.1 estados de purchaseorder",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1134"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_13_2_recepci\u00f3n",
+      "label": "13.2 Recepci\u00f3n",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13.2 recepcion",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1144"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_13_3_precio_de_compra",
+      "label": "13.3 Precio de compra",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13.3 precio de compra",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1158"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_13_4_proveedores",
+      "label": "13.4 Proveedores",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13.4 proveedores",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1168"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_13_compras_y_proveedores",
+      "label": "13. Compras y proveedores",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13. compras y proveedores",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1132"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_16_1_datos",
+      "label": "16.1 Datos",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16.1 datos",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1290"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_16_2_m\u00e9tricas",
+      "label": "16.2 M\u00e9tricas",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16.2 metricas",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1307"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_16_3_segmentaci\u00f3n",
+      "label": "16.3 Segmentaci\u00f3n",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16.3 segmentacion",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1319"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_16_4_consentimiento",
+      "label": "16.4 Consentimiento",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16.4 consentimiento",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1332"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_16_crm",
+      "label": "16. CRM",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16. crm",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1288"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_18_1_eventos",
+      "label": "18.1 Eventos",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18.1 eventos",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1392"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_18_2_domain_event_vs_integration_event",
+      "label": "18.2 Domain Event vs Integration Event",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18.2 domain event vs integration event",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1407"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_18_3_outbox_futura",
+      "label": "18.3 Outbox futura",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18.3 outbox futura",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1416"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_18_eventos_de_dominio_y_aplicaciones",
+      "label": "18. Eventos de dominio y aplicaciones",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18. eventos de dominio y aplicaciones",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1390"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_20_1_mvp",
+      "label": "20.1 MVP",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "20.1 mvp",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1506"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_20_2_preparaci\u00f3n",
+      "label": "20.2 Preparaci\u00f3n",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "20.2 preparacion",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1511"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_20_3_futuro",
+      "label": "20.3 Futuro",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "20.3 futuro",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1520"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_20_offline_y_sincronizaci\u00f3n_futura",
+      "label": "20. Offline y sincronizaci\u00f3n futura",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "20. offline y sincronizacion futura",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1504"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_24_1_pipeline",
+      "label": "24.1 Pipeline",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "24.1 pipeline",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1701"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_24_2_branching",
+      "label": "24.2 Branching",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "24.2 branching",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1734"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_24_3_migraciones",
+      "label": "24.3 Migraciones",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "24.3 migraciones",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1748"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_24_ci_cd",
+      "label": "24. CI/CD",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "24. ci/cd",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1699"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_27_convenciones_de_c\u00f3digo",
+      "label": "27. Convenciones de c\u00f3digo",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "27. convenciones de codigo",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1861"
     },
     {
       "id": "pos_saas_software_architecture_handbook_1_0_32_migraci\u00f3n_futura_a_microservicios",
@@ -4610,6 +4478,18 @@
       "norm_label": "38. reglas de oro del proyecto",
       "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "source_location": "L2340"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_39_ap\u00e9ndice_ejemplo_de_estructura_de_repositorio",
+      "label": "39. Ap\u00e9ndice - Ejemplo de estructura de repositorio",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "39. apendice - ejemplo de estructura de repositorio",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L2362"
     },
     {
       "id": "pos_saas_software_architecture_handbook_1_0_40_adr_template",
@@ -4694,6 +4574,138 @@
       "norm_label": "49. calidad de datos",
       "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
       "source_location": "L2795"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_4_1_contexto",
+      "label": "4.1 Contexto",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 contexto",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L321"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_4_2_contenedores",
+      "label": "4.2 Contenedores",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 contenedores",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L342"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_4_3_decisi\u00f3n",
+      "label": "4.3 Decisi\u00f3n",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 decision",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L364"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_4_contexto_y_arquitectura_c4",
+      "label": "4. Contexto y arquitectura C4",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. contexto y arquitectura c4",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L319"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_control_del_documento",
+      "label": "Control del documento",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "control del documento",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_c\u00f3mo_usar_este_documento",
+      "label": "C\u00f3mo usar este documento",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "como usar este documento",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_documentaci\u00f3n_viva",
+      "label": "Documentaci\u00f3n viva",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "documentacion viva",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L2396"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_java",
+      "label": "Java",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "java",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1863"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_software_architecture_handbook_1_0",
+      "label": "Software Architecture Handbook 1.0",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "software architecture handbook 1.0",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_sql",
+      "label": "SQL",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "sql",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1899"
+    },
+    {
+      "id": "pos_saas_software_architecture_handbook_1_0_typescript",
+      "label": "TypeScript",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "typescript",
+      "source_file": "POS_SaaS_Software_Architecture_Handbook_1.0.md",
+      "source_location": "L1891"
     },
     {
       "id": "pos_saas_software_architecture_handbook_1_0_1_1_prop\u00f3sito",
@@ -5319,7 +5331,7 @@
     },
     {
       "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
-      "target": "backlog_m\u00f3dulo_de_configuraci\u00f3n_pol\u00edticas_tenant_v1_3_0_completado",
+      "target": "backlog_m\u00f3dulo_de_compras_costo_promedio_purchasing_v1_4_0_completado",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5330,13 +5342,24 @@
     },
     {
       "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
+      "target": "backlog_m\u00f3dulo_de_configuraci\u00f3n_pol\u00edticas_tenant_v1_3_0_completado",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BACKLOG.md",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "backlog_backlog_v2_camino_a_producci\u00f3n",
       "target": "backlog_m\u00f3dulo_plan_separe_layaway_v1_4_0_completado",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L118",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -5347,7 +5370,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L141",
+      "source_location": "L158",
       "weight": 1.0
     },
     {
@@ -5358,7 +5381,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L169",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -5501,7 +5524,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L145",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -5512,7 +5535,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L151",
+      "source_location": "L168",
       "weight": 1.0
     },
     {
@@ -5523,7 +5546,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BACKLOG.md",
-      "source_location": "L162",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -9862,5 +9885,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "445d1b06dce168ab9dc90fc9ccf29f031d5224f7"
+  "built_at_commit": "85a3fe607a76bdfa7ddb51ad2a86959f86fdb80f"
 }

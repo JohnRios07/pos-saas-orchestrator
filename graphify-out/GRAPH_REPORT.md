@@ -1,17 +1,17 @@
-# Graph Report - pos  (2026-10-14)
+# Graph Report - pos  (2026-10-17)
 
 ## Corpus Check
-- 14 files · ~20,799 words
+- 14 files · ~21,034 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: (none) 2, .example 1, .gz 1)
 
 ## Summary
-- 435 nodes · 423 edges · 52 communities (49 shown, 3 thin omitted)
+- 436 nodes · 424 edges · 43 communities (41 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `445d1b06`
+- Built from commit: `85a3fe60`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,7 +20,6 @@
 - Scenarios
 - Tasks: Sprint 1 - Cash Session Resilience & Validation
 - Backlog: V2 - Camino a Producción
-- 39. Apéndice - Ejemplo de estructura de repositorio
 - Proposal: Sprint 1 - Cash Session Resilience & Validation
 - POS_SaaS_Software_Architecture_Handbook_1.0.md
 - 1.2 Principios de producto
@@ -51,31 +50,23 @@
 - 29. Flujos operativos detallados
 - POS SaaS - Orchestrator / Arquitecto
 - 11. Flujo de venta de extremo a extremo
-- 13. Compras y proveedores
 - 14. POS y experiencia de usuario
-- 16. CRM
 - 22. Observabilidad
 - 23. Docker y despliegue
 - 28. Contratos de dominio
 - 31. Performance
 - 36. Checklist de lanzamiento MVP
 - 43. Runbook operativo inicial
-- 18. Eventos de dominio y aplicaciones
-- 20. Offline y sincronización futura
-- 24. CI/CD
-- 27. Convenciones de código
-- 4. Contexto y arquitectura C4
 - opencode.json
-- Software Architecture Handbook 1.0
 - backup.sh
 
 ## God Nodes (most connected - your core abstractions)
 1. `7. Modelo de datos PostgreSQL` - 13 edges
 2. `45. Plan de implementación recomendado` - 12 edges
 3. `Design: Sprint 1 - Cash Session Resilience & Validation` - 12 edges
-4. `Decisión consolidada` - 11 edges
-5. `Proposal: Sprint 1 - Cash Session Resilience & Validation` - 11 edges
-6. `Backlog: V2 - Camino a Producción` - 10 edges
+4. `Backlog: V2 - Camino a Producción` - 11 edges
+5. `Decisión consolidada` - 11 edges
+6. `Proposal: Sprint 1 - Cash Session Resilience & Validation` - 11 edges
 7. `2. Requisitos funcionales` - 10 edges
 8. `5.3 Agregados principales` - 9 edges
 9. `26. ADR - Decisiones arquitectónicas` - 9 edges
@@ -87,7 +78,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (52 total, 3 thin omitted)
+## Communities (43 total, 2 thin omitted)
 
 ### Community 0 - "Design: Sprint 1 - Cash Session Resilience & Validation"
 Cohesion: 0.09
@@ -102,16 +93,16 @@ Cohesion: 0.11
 Nodes (17): Change ID, Definition of Done, Parallel Execution, Phase 1: Foundation (Shared Hook), Phase 2: Component Updates, Phase 3: Verification, TASK-001: Create `useCashSession` hook, TASK-002: Update CashManagement.tsx (#22) (+9 more)
 
 ### Community 3 - "Backlog: V2 - Camino a Producción"
-Cohesion: 0.10
-Nodes (20): Accesibilidad & Polish, Backlog: V2 - Camino a Producción, Design System Foundation, Deuda Técnica (Testing & QA), Funcionalidad de Negocio, ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**, 🛍️ MÓDULO PLAN SEPARE / LAYAWAY (v1.4.0) | **Completado**, Notas de Crédito y Mejoras UX (+12 more)
+Cohesion: 0.09
+Nodes (21): Accesibilidad & Polish, Backlog: V2 - Camino a Producción, Design System Foundation, Deuda Técnica (Testing & QA), Funcionalidad de Negocio, 📦 MÓDULO DE COMPRAS & COSTO PROMEDIO / PURCHASING (v1.4.0) | **Completado**, ⚙️ MÓDULO DE CONFIGURACIÓN & POLÍTICAS TENANT (v1.3.0) | **Completado**, 🛍️ MÓDULO PLAN SEPARE / LAYAWAY (v1.4.0) | **Completado** (+13 more)
 
 ### Community 5 - "Proposal: Sprint 1 - Cash Session Resilience & Validation"
 Cohesion: 0.12
 Nodes (15): 1. Reusable Hook: `useCashSession()`, 2. Component-Level Changes, Acceptance Criteria, Approach, Change ID, Current State Analysis, Dependencies, Intent (+7 more)
 
 ### Community 6 - "POS_SaaS_Software_Architecture_Handbook_1.0.md"
-Cohesion: 0.15
-Nodes (12): 32. Migración futura a microservicios, 34. Definition of Done, 35. Checklist de seguridad antes de producción, 37. Riesgos técnicos, 38. Reglas de oro del proyecto, 40. ADR template, 42. Contrato inicial de eventos, 44. Evolución del esquema de datos (+4 more)
+Cohesion: 0.04
+Nodes (47): 13.1 Estados de PurchaseOrder, 13.2 Recepción, 13.3 Precio de compra, 13.4 Proveedores, 13. Compras y proveedores, 16.1 Datos, 16.2 Métricas, 16.3 Segmentación (+39 more)
 
 ### Community 7 - "1.2 Principios de producto"
 Cohesion: 0.14
@@ -225,17 +216,9 @@ Nodes (4): graphify, Invariantes, POS SaaS - Orchestrator / Arquitecto, Responsa
 Cohesion: 0.40
 Nodes (5): 11.1 Flujo, 11.2 Transacción, 11.3 Estado de venta, 11.4 Concurrencia, 11. Flujo de venta de extremo a extremo
 
-### Community 35 - "13. Compras y proveedores"
-Cohesion: 0.40
-Nodes (5): 13.1 Estados de PurchaseOrder, 13.2 Recepción, 13.3 Precio de compra, 13.4 Proveedores, 13. Compras y proveedores
-
 ### Community 36 - "14. POS y experiencia de usuario"
 Cohesion: 0.40
 Nodes (5): 14.1 Principios, 14.2 Atajos, 14.3 Responsive, 14.4 Accesibilidad, 14. POS y experiencia de usuario
-
-### Community 37 - "16. CRM"
-Cohesion: 0.40
-Nodes (5): 16.1 Datos, 16.2 Métricas, 16.3 Segmentación, 16.4 Consentimiento, 16. CRM
 
 ### Community 38 - "22. Observabilidad"
 Cohesion: 0.40
@@ -261,32 +244,8 @@ Nodes (5): 36. Checklist de lanzamiento MVP, Backend, Calidad, Frontend, Infra
 Cohesion: 0.40
 Nodes (5): 43. Runbook operativo inicial, Backend caído, Disco lleno, PostgreSQL caído, Proveedor de facturación caído
 
-### Community 44 - "18. Eventos de dominio y aplicaciones"
-Cohesion: 0.50
-Nodes (4): 18.1 Eventos, 18.2 Domain Event vs Integration Event, 18.3 Outbox futura, 18. Eventos de dominio y aplicaciones
-
-### Community 45 - "20. Offline y sincronización futura"
-Cohesion: 0.50
-Nodes (4): 20.1 MVP, 20.2 Preparación, 20.3 Futuro, 20. Offline y sincronización futura
-
-### Community 46 - "24. CI/CD"
-Cohesion: 0.50
-Nodes (4): 24.1 Pipeline, 24.2 Branching, 24.3 Migraciones, 24. CI/CD
-
-### Community 47 - "27. Convenciones de código"
-Cohesion: 0.50
-Nodes (4): 27. Convenciones de código, Java, SQL, TypeScript
-
-### Community 48 - "4. Contexto y arquitectura C4"
-Cohesion: 0.50
-Nodes (4): 4.1 Contexto, 4.2 Contenedores, 4.3 Decisión, 4. Contexto y arquitectura C4
-
-### Community 50 - "Software Architecture Handbook 1.0"
-Cohesion: 0.67
-Nodes (3): Control del documento, Cómo usar este documento, Software Architecture Handbook 1.0
-
 ## Knowledge Gaps
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -304,4 +263,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Tasks: Sprint 1 - Cash Session Resilience & Validation` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Backlog: V2 - Camino a Producción` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
