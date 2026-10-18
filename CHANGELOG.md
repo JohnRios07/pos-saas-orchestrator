@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.3.0] - 2026-10-18 (pos-backend v2.6.0 / pos-frontend v2.7.0)
+
+### Added
+- **Managerial Financial Dashboard & Profitability (Sprint 3 / #19)**:
+  - **Backend (`pos-backend` v2.6.0)**:
+    - Server-authoritative `unitCost` snapshot on `SaleItem` during sale creation, resolving store inventory weighted average cost (`Inventory.averageCost`) or catalog base cost (`ProductVariant.cost`), preventing client spoofing and historical report distortions.
+    - Financial KPI calculations in `ReportingService.getDashboardStats` (`cogs`, `grossProfit`, `grossMarginPercentage`, `salesCount`) isolated with `@Transactional(readOnly = true)`.
+    - Top selling products endpoint `GET /api/reporting/top-products` grouping sold garments by variant, product, category, size, and color with revenue, volume, and profitability metrics.
+    - Multi-tenant reporting isolation tests and negative size filter test suite.
+  - **Frontend (`pos-frontend` v2.7.0)**:
+    - KPI cards in `Dashboard.tsx` displaying Ventas Totales, Ticket Promedio, Costo Mercancía (COGS), and Utilidad Bruta con badge de Margen %.
+    - Interactive Top Selling Garments table with category dropdown filter, debounced size search, and date range filters ("Hoy", "Mes Actual").
+    - Local calendar date formatting (`formatLocalDate`) eliminating UTC date shifts in UTC-5 timezones.
+    - Full decoupling of dashboard metrics and table filter effects to prevent unmounting and focus loss.
+
 ## [2.2.0] - 2026-10-17
 
 ### Added
