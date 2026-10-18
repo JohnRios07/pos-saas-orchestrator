@@ -165,8 +165,8 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 ### Design System Foundation
 - [x] **Design Tokens en Tailwind** — Configurados en CSS vía directivas `@theme` de Tailwind v4 en `src/index.css` con paleta semántica (primary, secondary, background, success, error, warning) y tipografía sans.
-- [ ] **Biblioteca de primitivas UI** — Primitivas atómicas creadas y estandarizadas en `src/components/ui/` (`Button`, `Input`, `Card`, `Badge`, `Skeleton`). *Pendientes*: `Select`, `Modal`, `Table`, `Toast`, `Spinner`, `EmptyState`.
-- [ ] **Form Library Adoption** — `react-hook-form` + `zod` adoptados en `PaymentModal.tsx` con esquemas y `zodResolver`. *Pendiente*: migrar formulario de `CashManagement.tsx`.
+- [x] **Biblioteca de primitivas UI** — Primitivas atómicas estandarizadas en `src/components/ui/` (`Button`, `Input`, `Card`, `Badge`, `Skeleton`, `SearchableSelect`, `Table`, `Modal`, `Spinner`, `EmptyState`, `Alert`).
+- [x] **Form Library Adoption** — `react-hook-form` + `zod` adoptados en `PaymentModal.tsx` y `CashManagement.tsx` con esquemas Zod y componentes `<FieldError />`.
 - [x] **Hooks y utilidades de formato centralizados** — Centralizado en `src/lib/formatters.ts` (`formatCurrency`, `formatDate`, `formatDateTime`, `setFormatLocale`), eliminando duplicaciones de `Intl.NumberFormat`.
 
 ### POS Refactor (Flujo Crítico)
@@ -178,12 +178,12 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
   - `CreditNoteSection` — validación y redención integrada en modal de pago
 - [x] **Skeletons de carga** — Todas las tablas (Kardex, Inventario, Historial, Productos) con `Skeleton` component
 - [x] **Atajos de teclado POS** — Implementados: `Cmd+K` / `Ctrl+K` (búsqueda de productos), `F2` (abrir pasarela de pago), `Escape` (cerrar modales).
-- [ ] **Sistema unificado de errores** — Field-level (inline), Toast (global), Banner (page-level) con códigos backend
+- [x] **Sistema unificado de errores** — Field-level (`FieldError`), Toast (global vía `errorHandler.ts`), Banner (page-level vía `<Alert />`) y `ApiError` mapeando códigos de dominio backend.
 
 ### Accesibilidad & Polish
-- [ ] **Auditoría ARIA** — Modals (`aria-modal`, `aria-labelledby`), selects, focus management, keyboard nav
+- [x] **Auditoría ARIA** — Modales (`aria-modal`, `aria-labelledby`, listener Escape, scroll locking), selects y focus management en `Modal`, `CustomerDetailsModal`, `VariantSelectionModal`, `CreateLayawayModal` y `SearchableSelect`.
 - [x] **Store ID como dropdown / contexto** — `Inventory.tsx` y `KardexTab.tsx` eliminaron inputs libres de texto y leen reactivamente la tienda del contexto de sesión (`useAuthStore`).
-- [ ] **i18n structure** — Extraer strings hardcodeados a `src/i18n/` (preparar ES/EN)
+- [x] **i18n structure** — Estructura extensible en `src/i18n/` (ES/EN) con tipos semánticos, contexto `I18nProvider`, hook `useI18n()` e interpolación.
 
 ---
 

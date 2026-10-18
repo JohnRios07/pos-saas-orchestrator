@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Design System Foundation & UX Refactor (Sprint 5 / v1.5.0)**:
+  - **Primitivas Atómicas UI**:
+    - `Table`, `TableHeader`, `TableBody`, `TableFooter`, `TableRow`, `TableHead`, `TableCell`, `TableCaption` componentes semánticos y tipados con soporte CVA y Tailwind v4 en `src/components/ui/Table.tsx`.
+    - `Modal`, `ModalHeader`, `ModalTitle`, `ModalDescription`, `ModalBody`, `ModalFooter` con bloqueo de scroll, listener de `Escape`, contenedor con backdrop y atributos ARIA completos en `src/components/ui/Modal.tsx`.
+    - `Spinner` y `EmptyState` centralizados en `src/components/ui/` con variantes de color y tamaño, manteniendo re-exportación transparente para compatibilidad con código existente.
+    - `Alert` y `FieldError` para banners de advertencia/error/éxito y mensajes de error en línea a nivel de formulario.
+  - **Adopción de Form Library (`react-hook-form` + `zod`)**:
+    - Migrado formulario de gestión de caja [`CashManagement.tsx`](file:///home/alexdev/Documents/projects/pos/pos-frontend/src/pages/CashManagement.tsx) con esquemas de validación Zod (`openSessionSchema`, `manualTransactionSchema`, `createCloseSessionSchema`) eliminando `useState` manual y agregando validación reactiva e inline errors.
+  - **Sistema Unificado de Errores**:
+    - Clase `ApiError` en `src/lib/apiError.ts` que preserva código HTTP, códigos de error de dominio (`code`) y detalles de respuesta del backend.
+    - Utilidad `errorHandler.ts` con diccionario `DOMAIN_ERROR_MAPPINGS` para mapeo semántico de códigos (`NO_ACTIVE_SESSION`, `INSUFFICIENT_STOCK`, `MAX_DISCOUNT_EXCEEDED`, etc.) y disparadores globales `showErrorToast` y `showSuccessToast`.
+  - **Accesibilidad ARIA**:
+    - Auditoría y cumplimiento ARIA (`role="dialog"`, `aria-modal="true"`, `aria-labelledby`, listener `Escape`) integrados en `CustomerDetailsModal`, `VariantSelectionModal`, `CreateLayawayModal` y `Modal`.
+  - **Estructura i18n**:
+    - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
+
 ## [2.3.0] - 2026-10-18 (pos-backend v2.6.0 / pos-frontend v2.7.0)
 
 ### Added
