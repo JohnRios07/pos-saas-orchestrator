@@ -86,7 +86,11 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
 
 *Reportes, mejoras de UX y calidad*
 
-- [ ] **Reportes Gerenciales y Margen de Utilidad** (#19): Dashboard financiero inicial entregado (`/reporting/dashboard`: Ventas totales, ticket promedio y medios de pago con selector de rango de fechas). *Pendiente*: costo de mercancía vendida (COGS), margen de utilidad bruta (`Precio Venta - Costo Unitario`) y ranking de prendas más vendidas por categoría y talla.
+- [x] **Reportes Gerenciales y Margen de Utilidad** (#19):
+  - **Snapshot Inmutable de Costo**: `SaleService` congela `unitCost` en `SaleItem` al momento de cada venta desde el costo promedio ponderado de inventario (`Inventory.averageCost`) o costo catálogo de reposición (`ProductVariant.cost`).
+  - **Dashboard Financiero Completo**: `/api/reporting/dashboard` con Ventas Totales, Ticket Promedio, Conteo de Transacciones, Costo de Mercancía Vendida (COGS), Utilidad Bruta y Margen % comercial.
+  - **Ranking de Prendas Más Vendidas (Top Products)**: Endpoint `/api/reporting/top-products` con agregación por variante, producto, SKU, categoría, talla, color, unidades vendidas, ingresos, COGS y margen de utilidad, con filtros opcionales por rango de fechas, categoría y talla.
+  - **Experiencia de Usuario en Frontend**: Vista `Dashboard.tsx` enriquecida con tarjetas de KPI financieros, selector de rango de fechas ("Hoy", "Mes Actual"), desglose de medios de pago y tabla detallada de ranking de prendas más vendidas. Tests unitarios e integración en verde.
 - [x] **Expandir Detalle de Venta en Historial** (#27): En `SalesHistory.tsx`, cada fila de la tabla debe ser expandible (click en fila o icono chevron) para mostrar el detalle de productos de esa venta: lista de items con SKU, nombre, talla, color, cantidad, precio unitario, subtotal. Cargar bajo demanda (lazy) vía `GET /api/sales/{id}/items` o incluir en respuesta de `/api/sales` con flag `?includeItems=true`.
 - [ ] **Tests Unitarios y de Integración: Concurrencia NC** (#70): Bloqueo pesimista (`@Lock(LockModeType.PESSIMISTIC_WRITE)`) implementado en `CreditNoteRepository` y pruebas de integración de devoluciones sin egreso en `SaleServiceIntegrationTest`. *Pendiente*: suite automatizada específica de concurrencia multihilo en redención simultánea.
 
