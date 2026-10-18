@@ -7,7 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2026-10-17
+
 ### Added
+- **Dynamic Product Variant Options**:
+  - **Backend**:
+    - `CatalogService.addVariantToProduct` dynamically expands `Product.options` when variants contain new attribute values (e.g. new colors, new sizes) or new custom attribute keys.
+    - Canonicalized variant attribute keys against `ProductOptionDefinition.name()` and trimmed values to prevent case mismatches across client selectors.
+    - Exposed `GET /api/catalog/products/{productId}` to retrieve current product definitions including dynamically updated options.
+  - **Frontend**:
+    - `ProductVariantsModal` enables adding new sizes, colors, and option values on the fly (via `+ Agregar nuevo...` or toggle button) as well as arbitrary extra characteristics (`+ Otra característica`) with collision detection.
+    - Ref-based form lifecycle using `useRef` to eliminate redundant network queries and preserve variant form drafts during parent state updates.
+    - WCAG accessibility: Escape key listener, sanitized HTML IDs, and contextual ARIA labels for dynamic attribute removal buttons.
+    - Real-time catalog synchronization with parent `Products.tsx`.
+
+### Fixed
+- **Semantic Domain Exception Handling (Backend)**: Entity lookups for missing products now throw `ResourceNotFoundException` mapped to HTTP 404 (instead of generic `RuntimeException` returning HTTP 500).
+
 - **Plan Separe (Layaway Module)**:
   - **Backend**:
     - Introduced Flyway migration `V30__add_reserved_quantity_to_inventory.sql` adding `reserved_quantity NUMERIC(14,3)` with non-negative check constraint.
