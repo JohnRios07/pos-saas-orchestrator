@@ -582,6 +582,7 @@ create table products (
     brand_id uuid,
     name varchar(200) not null,
     description text,
+    gender varchar(20) not null default 'CABALLERO' check (gender in ('CABALLERO', 'DAMA')),
     active boolean not null default true,
     created_at timestamptz not null,
     updated_at timestamptz not null
