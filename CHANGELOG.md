@@ -24,6 +24,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Estructura i18n**:
     - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
 
+## [2.4.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.11.0)
+
+### Added
+- **Product Details Edition & Catalog Management**:
+  - **Backend (`pos-backend` v2.10.0)**:
+    - Endpoint `PUT /api/catalog/products/{productId}` with `@PreAuthorize("hasAnyRole('ADMIN', 'MANAGER', 'SUPERVISOR')")` allowing partial updates to product name, description, category, brand, and gender with strict multi-tenant validation.
+    - Added `@JsonProperty("productId")` on `ProductVariant` domain entity for client-side entity traversal.
+  - **Frontend (`pos-frontend` v2.11.0)**:
+    - `EditProductModal` component with responsive form fields (name, description, category, brand, gender) and direct launch trigger in `Products.tsx` actions column, updating local UI state immediately upon successful save.
+- **Payment Breakdown Summary & Reactive Calculations**:
+  - **Frontend (`pos-frontend` v2.11.0)**:
+    - Dynamic calculation in `PaymentModal` displaying the exact missing amount (`Faltan $...`) in red error messages when total received is less than total to pay.
+    - Reactive cross-field sync between Cash and Transfer payment methods, including automatic cash adjustment when entering transfer amounts.
+    - Real-time payment breakdown card detailing cash, transfer, remaining balance, and change.
+- **POS SKU & Barcode Search Optimization**:
+  - **Backend (`pos-backend` v2.10.0)**:
+    - Case-insensitive SKU and barcode lookups in `ProductVariantRepository` using `LOWER(pv.sku) = LOWER(:code) OR LOWER(pv.barcode) = LOWER(:code)`.
+  - **Frontend (`pos-frontend` v2.11.0)**:
+    - Integrated `matchesSearchQuery` in `ProductSelector.tsx` ensuring matching by SKU, barcode, and variant attributes.
+    - Added interactive 'X' clear button to immediately wipe the search input and restore full catalog view.
+
 ## [2.3.0] - 2026-10-18 (pos-backend v2.6.0 / pos-frontend v2.7.0)
 
 ### Added
