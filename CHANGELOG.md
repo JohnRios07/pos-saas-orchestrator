@@ -24,6 +24,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Estructura i18n**:
     - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
 
+## [2.5.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.12.0)
+
+### Added
+- **Cashier Printer Access & Isolated Settings Navigation**:
+  - **Frontend (`pos-frontend` v2.12.0)**:
+    - Enabled `CASHIER` role to access `/settings/printer` to pair and configure Bluetooth thermal printers (Phomemo M221 TSPL) independently of administrators.
+    - Added direct "Impresora" navigation link in `DashboardLayout` for cashiers.
+    - Encapsulated `ReceiptSettings` and `SettingsNav` with `hideNavigation` to hide administrative tabs (`/settings/business`, etc.) and the "Volver al Panel" link from cashiers.
+    - Added offline resilience by skipping remote `GET /settings/receipt` fetches for cashiers.
+
+### Fixed
+- **Mobile Modals Scrolling & Viewport Containment**:
+  - **Frontend (`pos-frontend` v2.12.0)**:
+    - Fixed Flexbox negative Y-coordinate overflow clipping across all application dialogs using `my-auto` to prevent inaccessible headers and close buttons on mobile devices.
+    - Constrained modal dialog containers to `max-h-[calc(100dvh-1.5rem)]` (or `2rem`) and `overflow-hidden` for dynamic mobile browser chrome support.
+    - Fixed modal headers and footers with `shrink-0` ensuring close and action buttons are never pushed off-screen.
+    - Enabled smooth vertical scrolling of long item and variant lists with `overflow-y-auto flex-1 min-h-0` on modal bodies and form wrappers.
+    - Standardized explicit `X` close buttons across `VariantSelectionModal`, `PaymentModal`, and inline page dialogs.
+- **Phomemo Bluetooth Continuous Thermal Receipt Gaps**:
+  - **Frontend (`pos-frontend` v2.12.0)**: Fixed paper feed motor pauses and physical paper gaps on continuous rolls by encoding thermal receipt output as a single contiguous `GS v 0` raster block (up to 16-bit 65,535 dots) instead of chunking every 255 lines.
+
 ## [2.4.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.11.1)
 
 ### Added
