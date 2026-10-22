@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Estructura i18n**:
     - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
 
-## [2.4.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.11.0)
+## [2.4.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.11.1)
 
 ### Added
 - **Product Details Edition & Catalog Management**:
