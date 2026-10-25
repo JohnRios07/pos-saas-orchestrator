@@ -24,6 +24,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Estructura i18n**:
     - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
 
+## [2.6.0] - 2026-10-24 (pos-backend v2.10.0 / pos-frontend v2.13.0)
+
+### Added
+- **Automatic POS Barcode Scanner & Variant Cart Addition**:
+  - **Frontend (`pos-frontend` v2.13.0)**:
+    - Implemented low-level HID keyboard emulation detector hook `useBarcodeScanner` in capture phase (`capture: true`) to intercept rapid scanner bursts (<= 50ms inter-key cadence) terminating with Enter.
+    - Added native Web Audio API synthesis utility `soundFeedback` providing zero-latency acoustic feedback (880Hz sine beep for recognized variants, 220Hz warning tone for errors or depleted stock).
+    - Conditioned barcode scanning strictly to active POS sessions (`Sales.tsx`), automatically disabled when cash session is closed or when blocking dialogs (payment modal, closing popup, completed sale) are displayed.
+    - Added in-memory store inventory validation (`stockByVariant`) ensuring items are clamped to available stock (`maxStock`) and preventing out-of-stock additions.
+    - Unified manual search input Enter key lookup in `ProductSelector.tsx` with the barcode handler to enforce identical inventory validation rules.
+
 ## [2.5.0] - 2026-10-22 (pos-backend v2.10.0 / pos-frontend v2.12.0)
 
 ### Added
