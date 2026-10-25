@@ -150,6 +150,7 @@ Este backlog detalla los requerimientos necesarios para llevar el MVP (v1.0.0) a
   - **Gestión financiera y de caja**: Abonos en efectivo ingresan al turno de caja activo del cajero (`IN`). Liquidación final usa método `LAYAWAY` con cero movimiento en caja física para evitar doble contabilización.
   - **Control de vencimientos (45 días)**: Detección y bloqueo automático de abonos y entregas en planes vencidos, endpoint de expiración masiva `POST /api/layaway/expire-overdue`.
   - **Cancelaciones sin salida de dinero**: Liberación inmediata de stock reservado y emisión de Nota de Crédito comercial (`CreditNote`) al cliente.
+  - **Redención de Notas de Crédito y Pago Mixto en Creación**: Redención atómica de Notas de Crédito comerciales con validación estricta de pertenencia de cliente, soporte de pago mixto (`initialPayments`) para cubrir el 20% inicial (Nota + Efectivo/Transferencia) y garantía de cero afectación física en caja para la fracción en crédito comercial.
   - **Entrega atómica y venta definitiva**: Descuento físico de inventario y generación del registro de venta oficial al liquidar el 100%.
 - [x] **Experiencia de Usuario y Frontend**:
   - Vista principal `/layaway` con KPIs en tiempo real (Saldo por cobrar, planes por vencer en ≤ 7 días, completados), pestañas de filtrado y búsqueda.
