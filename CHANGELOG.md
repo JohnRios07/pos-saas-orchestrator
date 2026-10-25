@@ -7,22 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.7.0] - 2026-10-25 (pos-backend v2.11.0 / pos-frontend v2.14.0)
+
 ### Added
-- **Design System Foundation & UX Refactor (Sprint 5 / v1.5.0)**:
-  - **Primitivas Atómicas UI**:
-    - `Table`, `TableHeader`, `TableBody`, `TableFooter`, `TableRow`, `TableHead`, `TableCell`, `TableCaption` componentes semánticos y tipados con soporte CVA y Tailwind v4 en `src/components/ui/Table.tsx`.
-    - `Modal`, `ModalHeader`, `ModalTitle`, `ModalDescription`, `ModalBody`, `ModalFooter` con bloqueo de scroll, listener de `Escape`, contenedor con backdrop y atributos ARIA completos en `src/components/ui/Modal.tsx`.
-    - `Spinner` y `EmptyState` centralizados en `src/components/ui/` con variantes de color y tamaño, manteniendo re-exportación transparente para compatibilidad con código existente.
-    - `Alert` y `FieldError` para banners de advertencia/error/éxito y mensajes de error en línea a nivel de formulario.
-  - **Adopción de Form Library (`react-hook-form` + `zod`)**:
-    - Migrado formulario de gestión de caja [`CashManagement.tsx`](file:///home/alexdev/Documents/projects/pos/pos-frontend/src/pages/CashManagement.tsx) con esquemas de validación Zod (`openSessionSchema`, `manualTransactionSchema`, `createCloseSessionSchema`) eliminando `useState` manual y agregando validación reactiva e inline errors.
-  - **Sistema Unificado de Errores**:
-    - Clase `ApiError` en `src/lib/apiError.ts` que preserva código HTTP, códigos de error de dominio (`code`) y detalles de respuesta del backend.
-    - Utilidad `errorHandler.ts` con diccionario `DOMAIN_ERROR_MAPPINGS` para mapeo semántico de códigos (`NO_ACTIVE_SESSION`, `INSUFFICIENT_STOCK`, `MAX_DISCOUNT_EXCEEDED`, etc.) y disparadores globales `showErrorToast` y `showSuccessToast`.
-  - **Accesibilidad ARIA**:
-    - Auditoría y cumplimiento ARIA (`role="dialog"`, `aria-modal="true"`, `aria-labelledby`, listener `Escape`) integrados en `CustomerDetailsModal`, `VariantSelectionModal`, `CreateLayawayModal` y `Modal`.
-  - **Estructura i18n**:
-    - Base de internacionalización en `src/i18n/` con soporte para español e inglés, diccionarios tipados (`TranslationDictionary`), contexto reactivo `I18nProvider`, hook `useI18n()` e interpolación de variables.
+- **Credit Note Redemption & Split Payment in Layaway Creation**:
+  - Habilitada redención de notas de crédito comerciales como medio de pago al crear un Plan Separe con validación asíncrona de titularidad y bloqueo pesimista en base de datos (`PESSIMISTIC_WRITE`).
+  - Soporte de pagos mixtos reactivos (Nota de Crédito + Efectivo o Transferencia) cuando el saldo de la nota no cubre el 20% de abono inicial mínimo legal, registrando en el arqueo físico de caja únicamente la porción en efectivo.
+  - Soporte de redención parcial configurable con preservación de saldo remanente en estado `PARTIALLY_USED`.
+- **Thermal Receipt Printing (80 mm) for Credit Notes**:
+  - Implementada infraestructura de tirilla térmica continua de 80 mm con paridad visual garantizada a través de tres drivers: Web Iframe (`@page`), TSPL continuo y Phomemo Bluetooth rasterizado (203 DPI / 576 px).
+  - Modal interactivo `CreditNoteReceiptModal` con previsualización monoespaciada, botón de impresión térmica directa y descarga de tirilla en PDF.
+  - Integración automática del modal de tirilla al cancelar planes separe con emisión de nota de crédito (`LayawayCancelModal`) y al registrar devoluciones de ventas (`SalesHistory`), además de botón de reimpresión en [`LayawayDetailModal`](file:///home/alexdev/Documents/projects/pos/pos-frontend/src/features/layaway/components/LayawayDetailModal.tsx).
 
 ## [2.6.0] - 2026-10-24 (pos-backend v2.10.0 / pos-frontend v2.13.2)
 
