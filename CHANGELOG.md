@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.8.0] - 2026-10-28 (pos-backend v2.12.0 / pos-frontend v2.15.0)
+
+### Added
+- **In-App APK Updater for Private Mobile Deployment**:
+  - **Backend (`pos-backend` v2.12.0)**:
+    - Endpoints públicos `/api/system/app-version` y `/api/system/app-download`.
+    - Arquitectura hexagonal estricta con puerto `ReleaseAssetProvider` y adaptador `GitHubReleaseAdapter` para consulta segura de releases en repositorios privados de GitHub.
+    - Caché atómica en memoria con TTL de 5 minutos y pre-resolución de URL CDN pre-firmada para descargas directas sin sobrecarga de ancho de banda en el servidor.
+  - **Frontend & Android (`pos-frontend` v2.15.0)**:
+    - Plugin nativo Capacitor `ApkUpdaterPlugin` para descarga en archivo `.tmp`, control de concurrencia, delegación segura al instalador del sistema mediante `FileProvider` y solicitud de permiso `REQUEST_INSTALL_PACKAGES`.
+    - Compatibilidad comprobada con Android API 24–32 (`str.trim().isEmpty()`).
+    - Hook reactivo `useAppUpdate` y modal de actualización `AppUpdateModal` en `SettingsHub`.
+
 ## [2.7.0] - 2026-10-25 (pos-backend v2.11.0 / pos-frontend v2.14.0)
 
 ### Added
