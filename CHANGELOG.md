@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.9.0] - 2026-11-06 (pos-backend v2.13.0 / pos-frontend v2.18.0)
+
+### Added
+- **Configurable Layaway Minimum Deposit Percentage per Tenant**:
+  - **Backend (`pos-backend` v2.13.0)**:
+    - Migración Flyway `V35__add_layaway_min_deposit_rate_to_sales_settings.sql` agregando `layaway_min_deposit_rate NUMERIC(5,2) NOT NULL DEFAULT 20.00` con restricción de rango (0, 100].
+    - Persistencia en entidad `TenantSalesSettings`, expuesta vía `SalesSettingsController` y `SalesSettingsDto`.
+    - Integración desacoplada entre bounded contexts vía `SaleService.getLayawayMinDepositRate(tenantId)`.
+    - Aplicación dinámica en `LayawayService` para creación de planes y cambio de prenda con fallback estándar al 20%.
+  - **Frontend (`pos-frontend` v2.18.0)**:
+    - Campo de configuración en `SalesSettingsForm.tsx` (`/settings/sales`) con invalidación de caché React Query al guardar.
+    - Cálculo dinámico de abono mínimo y retroalimentación en `CreateLayawayModal.tsx`, `ChangeGarmentModal.tsx` y `LayawayDetailModal.tsx`.
+- **PDF Receipt Sharing and Downloading in Sales History (`pos-frontend` v2.17.0)**:
+  - Integración progresiva de Web Share API en `downloadBlob` para compartir facturas PDF directamente por WhatsApp, Email o almacenamiento local en dispositivos móviles/Capacitor.
+  - Botones dedicados de exportación PDF en lista y detalle de recibo en `SaleRow.tsx`.
+- **Optional VAT (IVA 19%) in Purchase Orders (`pos-frontend` v2.16.0)**:
+  - Selector interactivo de IVA opcional (19%) en emisión de órdenes de compra (`CreatePurchaseOrder.tsx`), por defecto inactivo (`taxAmount = 0`) para compras a régimen simplificado o mercancía excluida sin distorsión fiscal.
+
+### Fixed
+- **Phomemo M221 MCU Buffer Overflow (`pos-frontend` v2.17.0)**:
+  - Segmentación de bloques raster térmicos a `maxLinesPerBlock = 255` en `phomemoBuilder.ts`, previniendo saturación de memoria y reinicio del microcontrolador de la impresora en recibos extensos.
+
 ## [2.8.0] - 2026-10-28 (pos-backend v2.12.0 / pos-frontend v2.15.0)
 
 ### Added
